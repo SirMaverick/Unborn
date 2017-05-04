@@ -18,7 +18,8 @@ public class Texture_Screen_Flicker : MonoBehaviour {
 
         if (mainScreen)
         {
-            StudioEventEmitter mainscreen = GetComponent<StudioEventEmitter>();
+            
+            StudioEventEmitter mainscreen = GameObject.FindGameObjectsWithTag("Mainscreen_sound")[0].GetComponent<StudioEventEmitter>();
             mainscreen.Play();
         }
         StartCoroutine(ScreenFlickerDelay());
