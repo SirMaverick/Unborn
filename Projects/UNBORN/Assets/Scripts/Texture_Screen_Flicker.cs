@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class Texture_Screen_Flicker : MonoBehaviour {
 
@@ -9,10 +10,17 @@ public class Texture_Screen_Flicker : MonoBehaviour {
     public int FlickerSolved;
     public int DelayMin;
     public int DelayMax;
+    public bool mainScreen = false;
 
     // Use this for initialization
     void Start () {
         Mat = gameObject.GetComponent<Renderer>().material;
+
+        if (mainScreen)
+        {
+            StudioEventEmitter mainscreen = GetComponent<StudioEventEmitter>();
+            mainscreen.Play();
+        }
         StartCoroutine(ScreenFlickerDelay());
     }
 
