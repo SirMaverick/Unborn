@@ -30,14 +30,14 @@ namespace UnityStandardAssets.Effects
 
             int numCollisionEvents = m_ParticleSystem.GetCollisionEvents(other, m_CollisionEvents);
             int i = 0;
-
+            /*
             while (i < numCollisionEvents)
             {
                 if (Time.time > lastSoundTime + 0.2f)
                 {
                     lastSoundTime = Time.time;
                 }
-
+                
                 var col = m_CollisionEvents[i].collider;
                 var attachedRigidbody = col.GetComponent<Rigidbody>();
                 if (attachedRigidbody != null)
@@ -49,7 +49,7 @@ namespace UnityStandardAssets.Effects
                 other.BroadcastMessage("Extinguish", SendMessageOptions.DontRequireReceiver);
 
                 i++;
-            }
+            }*/
         }
     }
 }
