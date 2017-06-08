@@ -82,6 +82,21 @@ ModelImporter:
     4300024: CurtainRail_2
     4300026: Cloth
     4300028: Glass
+    6400000: Bench_Long
+    6400002: Bench_Short
+    6400004: Cloth
+    6400006: Cupboard
+    6400008: CurtainRail_1
+    6400010: CurtainRail_2
+    6400012: CurtainRail_3
+    6400014: CurtainRail_4
+    6400016: CurtainRail_5
+    6400018: Door
+    6400020: Glass
+    6400022: Hospital bed
+    6400024: Ledstrip
+    6400026: SideTable
+    6400028: WallsAndFloor
   materials:
     importMaterials: 1
     materialName: 0
@@ -110,7 +125,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

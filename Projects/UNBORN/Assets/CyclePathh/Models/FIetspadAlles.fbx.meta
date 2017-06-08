@@ -187,6 +187,40 @@ ModelImporter:
     4300062: polySurface70
     4300064: polySurface71
     4300066: polySurface72
+    6400000: pCube19
+    6400002: pCube21
+    6400004: pCube22
+    6400006: pCube23
+    6400008: polySurface19
+    6400010: polySurface20
+    6400012: polySurface25
+    6400014: polySurface29
+    6400016: polySurface48
+    6400018: polySurface49
+    6400020: polySurface5
+    6400022: polySurface50
+    6400024: polySurface51
+    6400026: polySurface52
+    6400028: polySurface53
+    6400030: polySurface54
+    6400032: polySurface55
+    6400034: polySurface56
+    6400036: polySurface57
+    6400038: polySurface58
+    6400040: polySurface59
+    6400042: polySurface60
+    6400044: polySurface61
+    6400046: polySurface62
+    6400048: polySurface63
+    6400050: polySurface64
+    6400052: polySurface65
+    6400054: polySurface66
+    6400056: polySurface67
+    6400058: polySurface68
+    6400060: polySurface69
+    6400062: polySurface70
+    6400064: polySurface71
+    6400066: polySurface72
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -198,6 +232,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -214,7 +250,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
