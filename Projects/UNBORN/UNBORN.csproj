@@ -86,15 +86,35 @@
   <ItemGroup>
     <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudio.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Audio\FmodGvrAudioRoom.cs" />
+    <Compile Include="Assets\Scripts\DoorScript.cs" />
+    <Compile Include="Assets\Scripts\HallWayLightFlicker.cs" />
     <Compile Include="Assets\Scripts\Hologram.cs" />
+    <Compile Include="Assets\Scripts\Menu_Button_Pulse.cs" />
     <Compile Include="Assets\Scripts\Particle_Spark_Delay.cs" />
     <Compile Include="Assets\Scripts\Piston_Animation.cs" />
+    <Compile Include="Assets\Scripts\Room1\FinalScene_Button.cs" />
+    <Compile Include="Assets\Scripts\Room1\FinalScene_Button_Screens.cs" />
+    <Compile Include="Assets\Scripts\Room2\Room2_CarelessWhipser.cs" />
+    <Compile Include="Assets\Scripts\Room2\Room2_ControlPanel.cs" />
+    <Compile Include="Assets\Scripts\Room2\Room2_ControlPanelButtonScript.cs" />
+    <Compile Include="Assets\Scripts\Room2\Room2_Hologram_Shader.cs" />
+    <Compile Include="Assets\Scripts\Room2\Room2_PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\Room2\Room2_Screnes\Room2_EmissionColor.cs" />
+    <Compile Include="Assets\Scripts\Room2\Room2_Screnes\Room2_Screens_LookatPlayer.cs" />
     <Compile Include="Assets\Scripts\Screen_LightOn.cs" />
     <Compile Include="Assets\Scripts\Texture_Logo_Center_FadeIn.cs" />
     <Compile Include="Assets\Scripts\Texture_Screen_Flicker.cs" />
+    <Compile Include="Assets\Scripts\ToiletDoor.cs" />
+    <Compile Include="Assets\Scripts\WindowShutterLighting.cs" />
+    <Compile Include="Assets\Scripts\WindowShutters.cs" />
+    <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EditorLabel.cs" />
+    <Compile Include="Assets\ShaderForge\Example Assets\Scripts\EnableCameraDepthInForward.cs" />
+    <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />
+    <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
+    <None Include="Assets\Shaders\Hologram_PBR_V2.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

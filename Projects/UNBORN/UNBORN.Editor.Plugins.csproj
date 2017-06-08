@@ -115,6 +115,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="ShaderForge">
+      <HintPath>Assets\ShaderForge\Editor\ShaderForge.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UNBORN.Plugins.csproj">
@@ -150,6 +153,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />
+    <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
+    <None Include="Assets\Shaders\Hologram_PBR_V2.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

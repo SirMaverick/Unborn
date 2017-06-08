@@ -115,6 +115,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="ShaderForge">
+      <HintPath>Assets\ShaderForge\Editor\ShaderForge.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UNBORN.Plugins.csproj">
@@ -148,9 +151,13 @@
     <Compile Include="Assets\Editor\ImageEffects\TonemappingEditor.cs" />
     <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
     <Compile Include="Assets\GoogleVR\Editor\FmodGvrAudioRoomEditor.cs" />
+    <Compile Include="Assets\ShaderForge\Editor\InternalResources\Inspectors\ShaderForgeInspector.cs" />
+    <Compile Include="Assets\ShaderForge\Editor\InternalResources\Inspectors\ShaderForgeMaterialInspector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />
+    <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
+    <None Include="Assets\Shaders\Hologram_PBR_V2.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

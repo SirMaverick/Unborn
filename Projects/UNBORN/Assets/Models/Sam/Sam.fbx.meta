@@ -1,0 +1,104 @@
+fileFormatVersion: 2
+guid: 68976273e254852408ac249528f780a0
+timeCreated: 1496257866
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: freddi_hightmore__001_freddi_hightmore__001_Tex_0599_0_dds_Tex_05_Tex_0599_0_dds
+    100002: freddi_hightmore__freddi_hightmore__Tex_0603_0_dds_Tex_06_Tex_0603_0_dds
+    100004: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds
+    100006: //RootNode
+    100008: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds1
+    400000: freddi_hightmore__001_freddi_hightmore__001_Tex_0599_0_dds_Tex_05_Tex_0599_0_dds
+    400002: freddi_hightmore__freddi_hightmore__Tex_0603_0_dds_Tex_06_Tex_0603_0_dds
+    400004: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds
+    400006: //RootNode
+    400008: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds1
+    2300000: freddi_hightmore__001_freddi_hightmore__001_Tex_0599_0_dds_Tex_05_Tex_0599_0_dds
+    2300002: freddi_hightmore__freddi_hightmore__Tex_0603_0_dds_Tex_06_Tex_0603_0_dds
+    2300004: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds
+    2300006: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds1
+    3300000: freddi_hightmore__001_freddi_hightmore__001_Tex_0599_0_dds_Tex_05_Tex_0599_0_dds
+    3300002: freddi_hightmore__freddi_hightmore__Tex_0603_0_dds_Tex_06_Tex_0603_0_dds
+    3300004: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds
+    3300006: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds1
+    4300000: freddi_hightmore__001_freddi_hightmore__001_Tex_0599_0_dds_Tex_05_Tex_0599_0_dds
+    4300002: freddi_hightmore__freddi_hightmore__Tex_0603_0_dds_Tex_06_Tex_0603_0_dds
+    4300004: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds
+    4300006: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds1
+    6400000: freddi_hightmore__001_freddi_hightmore__001_Tex_0599_0_dds_Tex_05_Tex_0599_0_dds
+    6400002: freddi_hightmore__freddi_hightmore__Tex_0603_0_dds_Tex_06_Tex_0603_0_dds
+    6400004: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds
+    6400006: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
