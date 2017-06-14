@@ -1,0 +1,54 @@
+{9afca949-e4e9-45d5-961e-edc55b7ed754} event:/Room 01/AMB/AMB_Room_01
+{62c1a575-52b5-4bec-ad6f-ea4b444fd11b} event:/Room 01/SFX/Mainscreen_On
+{5d92da54-8cc8-4486-a224-4db4306274df} event:/Room 01/SFX/Singlescreen_Off
+{f6c87f9c-6eec-4b8f-be4b-10c8d381e2c9} event:/Room 01/SFX/Singlescreen_On
+{152c5b39-e0cd-42c9-95c1-c24dc0e520ef} event:/Room 01/SFX/Steam
+{d87a9f03-19b5-4c95-8642-53c8c640e5a7} event:/VO/Scene04/Avaline/Zin01
+{36e23a86-2040-4907-80ad-2f5bb034838a} event:/VO/Scene04/Avaline/Zin03
+{8ce188cd-1bb2-4850-8948-6775a708c192} event:/VO/Scene04/Avaline/Zin04
+{c445c328-3921-4099-a449-8dca2b749df5} event:/VO/Scene04/Avaline/Zin05
+{d5dc9332-35d0-4e80-aef4-933ef69282f3} event:/VO/Scene04/Avaline/Zin06
+{0cbc81ee-5620-4660-bb7b-d42a65006dc9} event:/VO/Scene04/Avaline/Zin07
+{40db00e1-ce31-4871-bd72-0f0063a5c009} event:/VO/Scene04/Avaline/Zin08
+{a516317b-ac4c-4082-838c-c23867f30e9b} event:/VO/Scene04/Avaline/Zin09
+{e82a1593-6dcf-49db-a62c-2e804ac0a3df} event:/VO/Scene04/Avaline/Zin10
+{9f388d89-e2c4-450e-83a5-7dc8d543568a} event:/VO/Scene04/Avaline/Zin11
+{44427ade-5161-43c1-97b0-348a80c7e049} event:/VO/Scene04/Avaline/Zin12
+{92cda8fb-7c9c-41a9-a398-5783c64bef17} event:/VO/Scene04/Avaline/Zin13
+{9eb0c191-3332-4c8c-9068-5a2f0c0e1de7} event:/VO/Scene03/Avaline/Zin01
+{ef47549a-fe44-47c5-b353-1a0a978a7e28} event:/VO/Scene03/Avaline/Zin02
+{9f9ac697-985a-4bff-b5e6-11f96559f69a} event:/VO/Scene03/Avaline/Zin04
+{3f4f56bb-0276-48cb-86fb-f3188987d4eb} event:/VO/Scene03/Avaline/Zin05
+{f196b3e7-33a0-421f-9756-6a42649618d6} event:/VO/Scene03/Avaline/Zin06
+{92186cf2-f2ac-41a9-86a8-2aea89ac2fc9} event:/VO/Scene03/Avaline/Zin07
+{7d33fff9-0c28-48f2-aee5-dc8e388908f0} event:/VO/Scene03/Avaline/Zin08
+{546c673b-2c0d-4912-b452-5d01bfb1e0dc} event:/VO/Scene03/Avaline/Zin09
+{13ef2aed-3726-440d-8070-8055e4c1d196} event:/VO/Scene03/Avaline/Zin10
+{547bb91a-b57e-4644-8e47-27c27e165c8a} event:/VO/Scene03/Avaline/Zin11
+{68bc4498-2a61-4966-a7c8-42ab75f3215e} event:/VO/Scene03/Avaline/Zin12
+{021ad3cc-cd2f-4677-bfb1-b82ac3a5a6ef} event:/VO/Scene03/Avaline/Zin13
+{5f634c64-6c5c-4078-96ad-278df7c8609c} event:/VO/Scene03/Avaline/Zin14
+{4145705d-cebb-438b-81f3-54d81a5e9d31} event:/VO/Scene03/Avaline/Zin15
+{1a38212d-16c8-499d-942f-5813265946b0} event:/VO/Scene03/Avaline/Zin16
+{dffd19a0-9ea7-4a63-9b83-1bc12e043260} event:/VO/Scene03/Avaline/Zin17
+{200e0304-0841-4f91-b2d3-0783f8932c8b} event:/VO/Scene03/Avaline/Zin18
+{ebc618fd-9b33-4cf2-9588-bf1fe14c238f} event:/VO/Scene03/Avaline/Zin19
+{ff77a979-bbd9-47f8-989c-286ca4139f88} event:/VO/Scene03/Avaline/Zin20
+{62cc0f51-c08e-46d8-afa4-24c334e65297} event:/VO/Scene03/Avaline/Zin22
+{aeb72b30-fa6b-4c07-8948-6d5f26587df6} event:/VO/Scene03/Avaline/Zin23
+{542e27d1-4cd7-43f4-a0b3-bdf5d6678ae2} event:/VO/Scene03/Avaline/Zin24
+{c9fa525a-4703-4680-ba8e-7f2b03c75cc2} event:/VO/Scene01/Avaline/Zin01
+{2a706c01-24c7-4262-a668-30a9ef4e6f26} event:/VO/Scene01/Avaline/Zin02
+{b926abe3-7b01-4fc4-9962-bdae27be194a} event:/VO/Scene01/Avaline/Zin03
+{d668d34b-4011-4e59-aafd-4023d0aad603} event:/VO/Scene01/Avaline/Zin05
+{88f2d736-43b7-4c9b-8dc4-e97cc7829912} event:/VO/Scene01/Avaline/Zin06
+{8636fb09-605c-4505-aa8b-3d385f2dc31e} event:/VO/Scene02/Avaline/Zin01
+{4fb95b76-e5ab-4c4c-abcd-377e683cecfe} event:/VO/Scene02/Avaline/Zin02
+{21bc0859-dc48-44ac-83a0-bfa0e574450b} event:/VO/Scene02/Avaline/Zin03
+{f00d7e3f-8120-4fc5-9848-c5887fbd6511} event:/VO/Scene02/Avaline/Zin04
+{86f455f4-cbfa-4b58-ba30-e740aee0f46c} event:/VO/Scene02/Avaline/Zin05
+{857d6ad2-e53d-44c1-9d55-4f0a044404a9} event:/VO/Scene02/Avaline/Zin06
+{00ed1652-677e-460c-aef9-8b0df54a79d7} event:/VO/Scene02/Avaline/Zin07
+{2f014be6-75b3-400a-8ce9-d05684046559} bus:/
+{2b737054-73f7-4364-b6b6-9256e5053052} bus:/Reverb
+{000c9469-2749-4bf8-ad0c-e41ca99f913e} bank:/Master Bank
