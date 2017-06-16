@@ -4,7 +4,7 @@
 // Shader created with Shader Forge v1.34 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.34;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:True,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-9533-OUT,spec-358-OUT,gloss-1813-OUT,emission-9533-OUT,alpha-4632-OUT,clip-6452-OUT,olwid-7613-OUT,voffset-4869-OUT;n:type:ShaderForge.SFN_Slider,id:358,x:32353,y:32859,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32343,y:32954,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Color,id:5848,x:31518,y:32897,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_7241,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:0.6689653,c3:1,c4:0.5;n:type:ShaderForge.SFN_Subtract,id:7946,x:31862,y:32946,varname:node_7946,prsc:2|A-5848-RGB,B-2137-RGB;n:type:ShaderForge.SFN_Slider,id:7995,x:31223,y:33516,ptovrint:False,ptlb:Transparancy,ptin:_Transparancy,cmnt:Transparency,varname:node_7464,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0.49,cur:1,max:1;n:type:ShaderForge.SFN_Slider,id:4632,x:32046,y:33056,ptovrint:False,ptlb:Opacity,ptin:_Opacity,cmnt:Transparency,varname:_Offset_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:8554,x:32164,y:33746,ptovrint:False,ptlb:Offset,ptin:_Offset,cmnt:Transparency,varname:_Transparancy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:0.5;n:type:ShaderForge.SFN_Multiply,id:1199,x:32563,y:34131,varname:node_1199,prsc:2|A-8554-OUT,B-2137-R;n:type:ShaderForge.SFN_Blend,id:7977,x:32863,y:33964,varname:node_7977,prsc:2,blmd:10,clmp:True|SRC-1199-OUT,DST-8554-OUT;n:type:ShaderForge.SFN_Multiply,id:4869,x:33039,y:33801,varname:node_4869,prsc:2|A-9059-OUT,B-7977-OUT;n:type:ShaderForge.SFN_ValueProperty,id:7613,x:32872,y:33224,ptovrint:False,ptlb:node_9478,ptin:_node_9478,varname:node_9478,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.01;n:type:ShaderForge.SFN_Multiply,id:6452,x:32284,y:33292,varname:node_6452,prsc:2|A-9059-OUT,B-7888-OUT;n:type:ShaderForge.SFN_Blend,id:7888,x:32108,y:33455,varname:node_7888,prsc:2,blmd:10,clmp:True|SRC-2226-OUT,DST-7995-OUT;n:type:ShaderForge.SFN_RemapRange,id:9059,x:31790,y:33179,varname:node_9059,prsc:2,frmn:0,frmx:1,tomn:1,tomx:0|IN-2137-R;n:type:ShaderForge.SFN_Tex2d,id:2137,x:31470,y:33146,ptovrint:False,ptlb:BlackbarsTexture,ptin:_BlackbarsTexture,varname:node_2331,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:0acc6afed861dd544ad84cd32d8bb060,ntxv:0,isnm:False|UVIN-6035-UVOUT;n:type:ShaderForge.SFN_Panner,id:6035,x:31153,y:32937,varname:node_6035,prsc:2,spu:0,spv:-0.02|UVIN-6541-OUT;n:type:ShaderForge.SFN_TexCoord,id:5924,x:31076,y:33218,varname:node_5924,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Tex2d,id:4894,x:31178,y:33821,ptovrint:False,ptlb:GradiantTexture,ptin:_GradiantTexture,varname:node_4026,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:ee973782e820e0843ae6eb6bce534c37,ntxv:2,isnm:False;n:type:ShaderForge.SFN_Multiply,id:2226,x:31808,y:33622,varname:node_2226,prsc:2|A-7995-OUT,B-4894-R;n:type:ShaderForge.SFN_Color,id:5425,x:31003,y:32608,ptovrint:False,ptlb:Emission,ptin:_Emission,varname:_Color_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:0.6689653,c3:1,c4:0.5;n:type:ShaderForge.SFN_ComponentMask,id:6582,x:31281,y:33169,varname:node_6582,prsc:2,cc1:0,cc2:-1,cc3:-1,cc4:-1|IN-5924-U;n:type:ShaderForge.SFN_Append,id:6541,x:31470,y:33346,varname:node_6541,prsc:2|A-6582-OUT,B-7529-OUT;n:type:ShaderForge.SFN_FragmentPosition,id:9743,x:30630,y:33487,varname:node_9743,prsc:2;n:type:ShaderForge.SFN_Slider,id:5109,x:30473,y:33288,ptovrint:False,ptlb:node_5109,ptin:_node_5109,varname:node_5109,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.3846154,max:1;n:type:ShaderForge.SFN_Multiply,id:5383,x:30818,y:33348,varname:node_5383,prsc:2|A-5109-OUT,B-9743-Y;n:type:ShaderForge.SFN_NormalVector,id:8466,x:30544,y:32947,prsc:2,pt:False;n:type:ShaderForge.SFN_Dot,id:6521,x:30760,y:33040,varname:node_6521,prsc:2,dt:0|A-8466-OUT,B-485-OUT;n:type:ShaderForge.SFN_Vector3,id:485,x:30544,y:33120,varname:node_485,prsc:2,v1:0,v2:1,v3:0;n:type:ShaderForge.SFN_Abs,id:9276,x:30842,y:32850,varname:node_9276,prsc:2|IN-6521-OUT;n:type:ShaderForge.SFN_Lerp,id:9533,x:32089,y:32718,varname:node_9533,prsc:2|A-7946-OUT,B-5425-RGB,T-9276-OUT;n:type:ShaderForge.SFN_Multiply,id:7529,x:30974,y:33493,varname:node_7529,prsc:2|A-5383-OUT,B-9743-X;proporder:358-1813-5848-2137-7613-4632-7995-4894-8554-5425-5109;pass:END;sub:END;*/
+/*SF_DATA;ver:1.34;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:0,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:False,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:True,qofs:0,qpre:3,rntp:2,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:32719,y:32712,varname:node_2865,prsc:2|diff-9533-OUT,spec-358-OUT,gloss-1813-OUT,emission-9533-OUT,alpha-4632-OUT,clip-6452-OUT,olwid-7613-OUT,voffset-4869-OUT;n:type:ShaderForge.SFN_Slider,id:358,x:32353,y:32859,ptovrint:False,ptlb:Metallic,ptin:_Metallic,varname:node_358,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:1813,x:32343,y:32954,ptovrint:False,ptlb:Gloss,ptin:_Gloss,varname:_Metallic_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Color,id:5848,x:31518,y:32897,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_7241,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:0.6689653,c3:1,c4:0.5;n:type:ShaderForge.SFN_Subtract,id:7946,x:31862,y:32946,varname:node_7946,prsc:2|A-5848-RGB,B-2137-RGB;n:type:ShaderForge.SFN_Slider,id:7995,x:31223,y:33516,ptovrint:False,ptlb:Transparancy,ptin:_Transparancy,cmnt:Transparency,varname:node_7464,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0.49,cur:1,max:1;n:type:ShaderForge.SFN_Slider,id:4632,x:32046,y:33056,ptovrint:False,ptlb:Opacity,ptin:_Opacity,cmnt:Transparency,varname:_Offset_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Slider,id:8554,x:32164,y:33746,ptovrint:False,ptlb:Offset,ptin:_Offset,cmnt:Transparency,varname:_Transparancy_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:0.5;n:type:ShaderForge.SFN_Multiply,id:1199,x:32518,y:33879,varname:node_1199,prsc:2|A-8554-OUT,B-2137-R;n:type:ShaderForge.SFN_Blend,id:7977,x:32701,y:33879,varname:node_7977,prsc:2,blmd:10,clmp:True|SRC-1199-OUT,DST-8554-OUT;n:type:ShaderForge.SFN_Multiply,id:4869,x:32875,y:33879,varname:node_4869,prsc:2|A-9059-OUT,B-7977-OUT;n:type:ShaderForge.SFN_ValueProperty,id:7613,x:32872,y:33224,ptovrint:False,ptlb:node_9478,ptin:_node_9478,varname:node_9478,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.01;n:type:ShaderForge.SFN_Multiply,id:6452,x:32284,y:33292,varname:node_6452,prsc:2|A-9059-OUT,B-7888-OUT;n:type:ShaderForge.SFN_Blend,id:7888,x:32108,y:33455,varname:node_7888,prsc:2,blmd:10,clmp:True|SRC-2226-OUT,DST-7995-OUT;n:type:ShaderForge.SFN_RemapRange,id:9059,x:31790,y:33179,varname:node_9059,prsc:2,frmn:0,frmx:1,tomn:1,tomx:0|IN-2137-R;n:type:ShaderForge.SFN_Tex2d,id:2137,x:31470,y:33146,ptovrint:False,ptlb:BlackbarsTexture,ptin:_BlackbarsTexture,varname:node_2331,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:0acc6afed861dd544ad84cd32d8bb060,ntxv:0,isnm:False|UVIN-6035-UVOUT;n:type:ShaderForge.SFN_Panner,id:6035,x:31153,y:32937,varname:node_6035,prsc:2,spu:0,spv:-0.02|UVIN-6541-OUT;n:type:ShaderForge.SFN_TexCoord,id:5924,x:31076,y:33218,varname:node_5924,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Tex2d,id:4894,x:31178,y:33821,ptovrint:False,ptlb:GradiantTexture,ptin:_GradiantTexture,varname:node_4026,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:ee973782e820e0843ae6eb6bce534c37,ntxv:2,isnm:False;n:type:ShaderForge.SFN_Multiply,id:2226,x:31808,y:33622,varname:node_2226,prsc:2|A-7995-OUT,B-4894-R;n:type:ShaderForge.SFN_Color,id:5425,x:31003,y:32608,ptovrint:False,ptlb:Emission,ptin:_Emission,varname:_Color_copy,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0,c2:0.6689653,c3:1,c4:0.5;n:type:ShaderForge.SFN_ComponentMask,id:6582,x:31281,y:33169,varname:node_6582,prsc:2,cc1:0,cc2:-1,cc3:-1,cc4:-1|IN-5924-U;n:type:ShaderForge.SFN_Append,id:6541,x:31470,y:33346,varname:node_6541,prsc:2|A-6582-OUT,B-7529-OUT;n:type:ShaderForge.SFN_FragmentPosition,id:9743,x:30630,y:33487,varname:node_9743,prsc:2;n:type:ShaderForge.SFN_Slider,id:5109,x:30473,y:33288,ptovrint:False,ptlb:node_5109,ptin:_node_5109,varname:node_5109,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.3846154,max:1;n:type:ShaderForge.SFN_Multiply,id:5383,x:30818,y:33348,varname:node_5383,prsc:2|A-5109-OUT,B-9743-Y;n:type:ShaderForge.SFN_NormalVector,id:8466,x:30544,y:32947,prsc:2,pt:False;n:type:ShaderForge.SFN_Dot,id:6521,x:30760,y:33040,varname:node_6521,prsc:2,dt:0|A-8466-OUT,B-485-OUT;n:type:ShaderForge.SFN_Vector3,id:485,x:30544,y:33120,varname:node_485,prsc:2,v1:0,v2:1,v3:0;n:type:ShaderForge.SFN_Abs,id:9276,x:30842,y:32850,varname:node_9276,prsc:2|IN-6521-OUT;n:type:ShaderForge.SFN_Lerp,id:9533,x:32089,y:32718,varname:node_9533,prsc:2|A-7946-OUT,B-5425-RGB,T-9276-OUT;n:type:ShaderForge.SFN_Multiply,id:7529,x:30974,y:33493,varname:node_7529,prsc:2|A-5383-OUT,B-9743-X;proporder:358-1813-5848-2137-7613-4632-7995-4894-8554-5425-5109;pass:END;sub:END;*/
 
 Shader "Shader Forge/Hologram_PBR_V2" {
     Properties {
@@ -77,8 +77,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
                 o.uv0 = v.texcoord0;
                 o.uv1 = v.texcoord1;
                 o.uv2 = v.texcoord2;
-                float4 node_9575 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_9575.g*float2(0,-0.02));
+                float4 node_8883 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_8883.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2Dlod(_BlackbarsTexture,float4(TRANSFORM_TEX(node_6035, _BlackbarsTexture),0.0,0));
                 float node_9059 = (_BlackbarsTexture_var.r*-1.0+1.0);
                 float node_4869 = (node_9059*saturate(( _Offset > 0.5 ? (1.0-(1.0-2.0*(_Offset-0.5))*(1.0-(_Offset*_BlackbarsTexture_var.r))) : (2.0*_Offset*(_Offset*_BlackbarsTexture_var.r)) )));
@@ -90,8 +90,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
             }
             float4 frag(VertexOutput i) : COLOR {
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_9575 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_9575.g*float2(0,-0.02));
+                float4 node_8883 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_8883.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2D(_BlackbarsTexture,TRANSFORM_TEX(node_6035, _BlackbarsTexture));
                 float node_9059 = (_BlackbarsTexture_var.r*-1.0+1.0);
                 float4 _GradiantTexture_var = tex2D(_GradiantTexture,TRANSFORM_TEX(i.uv0, _GradiantTexture));
@@ -173,8 +173,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float4 node_6231 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_6231.g*float2(0,-0.02));
+                float4 node_9977 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_9977.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2Dlod(_BlackbarsTexture,float4(TRANSFORM_TEX(node_6035, _BlackbarsTexture),0.0,0));
                 float node_9059 = (_BlackbarsTexture_var.r*-1.0+1.0);
                 float node_4869 = (node_9059*saturate(( _Offset > 0.5 ? (1.0-(1.0-2.0*(_Offset-0.5))*(1.0-(_Offset*_BlackbarsTexture_var.r))) : (2.0*_Offset*(_Offset*_BlackbarsTexture_var.r)) )));
@@ -191,8 +191,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
                 float3 normalDirection = i.normalDir;
                 float3 viewReflectDirection = reflect( -viewDirection, normalDirection );
-                float4 node_6231 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_6231.g*float2(0,-0.02));
+                float4 node_9977 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_9977.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2D(_BlackbarsTexture,TRANSFORM_TEX(node_6035, _BlackbarsTexture));
                 float node_9059 = (_BlackbarsTexture_var.r*-1.0+1.0);
                 float4 _GradiantTexture_var = tex2D(_GradiantTexture,TRANSFORM_TEX(i.uv0, _GradiantTexture));
@@ -369,8 +369,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float4 node_132 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_132.g*float2(0,-0.02));
+                float4 node_2630 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_2630.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2Dlod(_BlackbarsTexture,float4(TRANSFORM_TEX(node_6035, _BlackbarsTexture),0.0,0));
                 float node_9059 = (_BlackbarsTexture_var.r*-1.0+1.0);
                 float node_4869 = (node_9059*saturate(( _Offset > 0.5 ? (1.0-(1.0-2.0*(_Offset-0.5))*(1.0-(_Offset*_BlackbarsTexture_var.r))) : (2.0*_Offset*(_Offset*_BlackbarsTexture_var.r)) )));
@@ -387,8 +387,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
                 float3x3 tangentTransform = float3x3( i.tangentDir, i.bitangentDir, i.normalDir);
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
                 float3 normalDirection = i.normalDir;
-                float4 node_132 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_132.g*float2(0,-0.02));
+                float4 node_2630 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_2630.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2D(_BlackbarsTexture,TRANSFORM_TEX(node_6035, _BlackbarsTexture));
                 float node_9059 = (_BlackbarsTexture_var.r*-1.0+1.0);
                 float4 _GradiantTexture_var = tex2D(_GradiantTexture,TRANSFORM_TEX(i.uv0, _GradiantTexture));
@@ -495,8 +495,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
                 o.uv0 = v.texcoord0;
                 o.uv1 = v.texcoord1;
                 o.uv2 = v.texcoord2;
-                float4 node_7297 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_7297.g*float2(0,-0.02));
+                float4 node_8001 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_8001.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2Dlod(_BlackbarsTexture,float4(TRANSFORM_TEX(node_6035, _BlackbarsTexture),0.0,0));
                 float node_9059 = (_BlackbarsTexture_var.r*-1.0+1.0);
                 float node_4869 = (node_9059*saturate(( _Offset > 0.5 ? (1.0-(1.0-2.0*(_Offset-0.5))*(1.0-(_Offset*_BlackbarsTexture_var.r))) : (2.0*_Offset*(_Offset*_BlackbarsTexture_var.r)) )));
@@ -508,8 +508,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
             }
             float4 frag(VertexOutput i) : COLOR {
                 float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
-                float4 node_7297 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_7297.g*float2(0,-0.02));
+                float4 node_8001 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_8001.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2D(_BlackbarsTexture,TRANSFORM_TEX(node_6035, _BlackbarsTexture));
                 float node_9059 = (_BlackbarsTexture_var.r*-1.0+1.0);
                 float4 _GradiantTexture_var = tex2D(_GradiantTexture,TRANSFORM_TEX(i.uv0, _GradiantTexture));
@@ -573,8 +573,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
                 o.uv1 = v.texcoord1;
                 o.uv2 = v.texcoord2;
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
-                float4 node_2486 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_2486.g*float2(0,-0.02));
+                float4 node_7153 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(o.uv0.r.r,((_node_5109*mul(unity_ObjectToWorld, v.vertex).g)*mul(unity_ObjectToWorld, v.vertex).r))+node_7153.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2Dlod(_BlackbarsTexture,float4(TRANSFORM_TEX(node_6035, _BlackbarsTexture),0.0,0));
                 float node_9059 = (_BlackbarsTexture_var.r*-1.0+1.0);
                 float node_4869 = (node_9059*saturate(( _Offset > 0.5 ? (1.0-(1.0-2.0*(_Offset-0.5))*(1.0-(_Offset*_BlackbarsTexture_var.r))) : (2.0*_Offset*(_Offset*_BlackbarsTexture_var.r)) )));
@@ -590,8 +590,8 @@ Shader "Shader Forge/Hologram_PBR_V2" {
                 UnityMetaInput o;
                 UNITY_INITIALIZE_OUTPUT( UnityMetaInput, o );
                 
-                float4 node_2486 = _Time + _TimeEditor;
-                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_2486.g*float2(0,-0.02));
+                float4 node_7153 = _Time + _TimeEditor;
+                float2 node_6035 = (float2(i.uv0.r.r,((_node_5109*i.posWorld.g)*i.posWorld.r))+node_7153.g*float2(0,-0.02));
                 float4 _BlackbarsTexture_var = tex2D(_BlackbarsTexture,TRANSFORM_TEX(node_6035, _BlackbarsTexture));
                 float3 node_9533 = lerp((_Color.rgb-_BlackbarsTexture_var.rgb),_Emission.rgb,abs(dot(i.normalDir,float3(0,1,0))));
                 o.Emission = node_9533;
