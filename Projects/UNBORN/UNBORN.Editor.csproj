@@ -152,6 +152,7 @@
     <Compile Include="Assets\ShaderForge\Editor\InternalResources\Inspectors\ShaderForgeMaterialInspector.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Audio\GUIDs.txt" />
     <None Include="Assets\Plugins\FMOD\LICENSE.TXT" />
     <None Include="Assets\ShaderForge\Example Assets\Shaders\Refraction.shader" />
     <None Include="Assets\Shaders\Hologram_PBR_V2.shader" />
