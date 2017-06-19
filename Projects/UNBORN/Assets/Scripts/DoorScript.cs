@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class DoorScript : MonoBehaviour {
 
@@ -24,6 +25,8 @@ public class DoorScript : MonoBehaviour {
             if (DoorOpen == false)
             {
                 StartCoroutine(OpenDoor());
+				Debug.Log("play");
+				RuntimeManager.PlayOneShot("event:/Room 02/SFX/Door_open", transform.position + new Vector3(0, 0, 0.85f));
             }
             else
             {
