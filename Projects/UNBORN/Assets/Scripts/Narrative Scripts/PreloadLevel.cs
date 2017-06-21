@@ -9,7 +9,8 @@ public class PreloadLevel : MonoBehaviour {
     AsyncOperation async;
 
     public static IEnumerator PreloadWithFadeInAndOut() {
-        AsyncOperation async = SceneManager.LoadSceneAsync(1);
+        int currentLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        AsyncOperation async = SceneManager.LoadSceneAsync(currentLevel);
         async.allowSceneActivation = false;
         GameObject faderObject = GameObject.FindGameObjectWithTag("Fader");
         RawImage fader = faderObject.GetComponent<RawImage>();
@@ -34,7 +35,8 @@ public class PreloadLevel : MonoBehaviour {
     }
 
     public static IEnumerator PreloadWithFadeOut() {
-        AsyncOperation async = SceneManager.LoadSceneAsync(1);
+        int currentLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        AsyncOperation async = SceneManager.LoadSceneAsync(currentLevel);
         async.allowSceneActivation = false;
         GameObject faderObject = GameObject.FindGameObjectWithTag("Fader");
         RawImage fader = faderObject.GetComponent<RawImage>();
@@ -54,7 +56,8 @@ public class PreloadLevel : MonoBehaviour {
     }
 
     public static IEnumerator PreloadWithFadeIn() {
-        AsyncOperation async = SceneManager.LoadSceneAsync(1);
+        int currentLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        AsyncOperation async = SceneManager.LoadSceneAsync(currentLevel);
         async.allowSceneActivation = false;
         GameObject faderObject = GameObject.FindGameObjectWithTag("Fader");
         RawImage fader = faderObject.GetComponent<RawImage>();
@@ -73,7 +76,8 @@ public class PreloadLevel : MonoBehaviour {
     }
 
     public static IEnumerator Preload() {
-        AsyncOperation async = SceneManager.LoadSceneAsync(1);
+        int currentLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        AsyncOperation async = SceneManager.LoadSceneAsync(currentLevel);
         async.allowSceneActivation = false;
         while (!async.isDone) {
             if (async.progress == 0.9f) {

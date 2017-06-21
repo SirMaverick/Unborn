@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class ReplaceSubtitles : MonoBehaviour {
 
@@ -10,7 +12,11 @@ public class ReplaceSubtitles : MonoBehaviour {
     public bool play;
     public string lastDialogue;
 
-    public AudioSource playerAudio;
+    private int tempWait;
+
+    string inputSound = "event:/VO/Scene2/Avaline/Zin02";
+    FMOD.Studio.EventInstance snapshot;
+
     public Text subtitles;
     public Text charName;
     public Text choice1, choice2, choice3;
@@ -23,6 +29,7 @@ public class ReplaceSubtitles : MonoBehaviour {
     private CharacterStorySettings[] dialogueList;
     public DialogueSettings currentNode;
 
+    FMOD.Studio.EventDescription description;
 
     // Use this for initialization
 
@@ -37,6 +44,7 @@ public class ReplaceSubtitles : MonoBehaviour {
 
 
         void Start () {
+        snapshot = RuntimeManager.CreateInstance(inputSound);
         choiceLists[0] = choice1;
         choiceLists[1] = choice2;
         choiceLists[2] = choice3;
@@ -44,14 +52,7 @@ public class ReplaceSubtitles : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Q)) {
-            StartCoroutine(StartText(dialogueList[0].MyList[0], 3.0f));
-            currentStory = dialogueList[0];
-        }
-        if (Input.GetKeyDown(KeyCode.T)) {
-            StartCoroutine(StartText(dialogueList[1].MyList[0], 3.0f));
-            currentStory = dialogueList[1];
-        }
+
         if (Input.GetKeyDown(KeyCode.Alpha1)) {
             currentNode.choice1 = true;
         }
@@ -75,10 +76,10 @@ public class ReplaceSubtitles : MonoBehaviour {
             subtitles.enabled = true;
         }
         currentNode = d;
-        if (d.voiceOver != null) {
-            playerAudio.clip = d.voiceOver;
-            playerAudio.Play();
-            waitTime = d.voiceOver.length;
+        if (d.fmodVoiceOver !=   "") {
+            SwapAudio(d.fmodVoiceOver, d.character);
+            waitTime = (float)tempWait / 1000;
+            
         }
         Debug.Log(currentNode.dialogueName);
         Debug.Log(currentNode.isChoice);
@@ -88,7 +89,13 @@ public class ReplaceSubtitles : MonoBehaviour {
 
             if (d.hasOutput) {
                 lastDialogue = currentNode.dialogueName;
-                StartCoroutine(StartText(d.outputList[0], d.outputList[0].waitTime));
+                DialogueSettings nextDialogue = null;
+                foreach (DialogueSettings diaS in currentStory.MyList) {
+                    if (d.outputList[0].dialogueName ==  diaS.dialogueName) {
+                         nextDialogue = diaS;
+                    }
+                }
+                StartCoroutine(StartText(nextDialogue, nextDialogue.waitTime));
             } else {
                 subtitles.enabled = false;
                 play = false;
@@ -96,13 +103,19 @@ public class ReplaceSubtitles : MonoBehaviour {
 
         } else if(currentNode.isChoice == false) {
             //charName.text = d.character;
-            subtitles.text = d.character + d.dialogueText;
+            subtitles.text = d.character + ": " + d.dialogueText;
 
             yield return new WaitForSeconds(waitTime);
 
             if (d.hasOutput) {
                 lastDialogue = currentNode.dialogueName;
-                StartCoroutine(StartText(d.outputList[0], d.outputList[0].waitTime));
+                DialogueSettings nextDialogue = null;
+                foreach (DialogueSettings diaS in currentStory.MyList) {
+                    if (d.outputList[0].dialogueName == diaS.dialogueName) {
+                        nextDialogue = diaS;
+                    }
+                }
+                StartCoroutine(StartText(nextDialogue, nextDialogue.waitTime));
             } else {
                 subtitles.enabled = false;
                 play = false;
@@ -125,13 +138,25 @@ public class ReplaceSubtitles : MonoBehaviour {
             
             DialogueSettings nextDialogue = null;
             if (currentNode.choice1) {
-                nextDialogue = listOfChoices[0].outputList[0];
+                foreach (DialogueSettings diaS in currentStory.MyList) {
+                    if (listOfChoices[0].outputList[0].dialogueName == diaS.dialogueName) {
+                        nextDialogue = diaS;
+                    }
+                }
                 currentNode.choice1 = false;
             } else if (currentNode.choice2) {
-                nextDialogue = listOfChoices[1].outputList[0];
+                foreach (DialogueSettings diaS in currentStory.MyList) {
+                    if (listOfChoices[1].outputList[0].dialogueName == diaS.dialogueName) {
+                        nextDialogue = diaS;
+                    }
+                }
                 currentNode.choice2 = false;
             } else if (currentNode.choice3) {
-                nextDialogue = listOfChoices[2].outputList[0];
+                foreach (DialogueSettings diaS in currentStory.MyList) {
+                    if (listOfChoices[2].outputList[0].dialogueName == diaS.dialogueName) {
+                        nextDialogue = diaS;
+                    }
+                }
                 currentNode.choice3 = false;
             }
             HideChoices(listOfChoices);
@@ -143,6 +168,36 @@ public class ReplaceSubtitles : MonoBehaviour {
         } 
         
         
+    }
+
+    private void OnLevelWasLoaded(int level) {
+        
+            //snapshot.release();
+            //snapshot = RuntimeManager.CreateInstance(inputSound);
+            //Debug.Log("Created Instance");
+        
+        
+    }
+
+    private void SwapAudio(string audioFile, string characterName) {
+        int wait = 0;
+        FMOD.Studio.PLAYBACK_STATE play_state;
+        snapshot.getPlaybackState(out play_state);
+        if (play_state == FMOD.Studio.PLAYBACK_STATE.PLAYING) {
+            snapshot.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+
+            snapshot.release();
+
+        }
+        int currentScene = SceneManager.GetActiveScene().buildIndex + 1;
+        snapshot = RuntimeManager.CreateInstance("event:/VO/Scene" + currentScene + "/" + characterName + "/" + audioFile);
+        snapshot.start();
+        snapshot.release();
+        snapshot.getDescription(out description);
+        description.getLength(out wait);
+        tempWait = wait;
+        Debug.Log(tempWait);
+
     }
 
     private void ShowChoices(List<DialogueSettings> listOfChoices) {
@@ -182,26 +237,10 @@ public class ReplaceSubtitles : MonoBehaviour {
             StartCoroutine(PreloadLevel.PreloadWithFadeOut());
         } else if (name == "Preload") {
             StartCoroutine(PreloadLevel.Preload());
+        } else if (name == "StartMovement") {
+            StopMovement.MovementOn();
+        } else if (name == "StopMovement") {
+            StopMovement.MovementOff(60, -60);
         }
     }
-    /*
-    IEnumerator FadeToBlack() {
-        RawImage faderObj = fader.GetComponent<RawImage>();
-        Color color = faderObj.color;
-        for (float i = 0; i < 1; i = i + 0.02f) {
-            color.a = i;
-            faderObj.color = color;
-            yield return new WaitForSeconds(0.02f);
-        }
-    }
-
-    IEnumerator FadeToScreen() {
-        RawImage faderObj = fader.GetComponent<RawImage>();
-        Color color = faderObj.color;
-        for (float i = 1; i > 0; i = i - 0.02f) {
-            color.a = i;
-            faderObj.color = color;
-            yield return new WaitForSeconds(0.02f);
-        }
-    } */    
 }

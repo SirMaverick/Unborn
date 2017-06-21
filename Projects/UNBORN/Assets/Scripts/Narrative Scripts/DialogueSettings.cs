@@ -13,6 +13,7 @@ public class DialogueSettings {
     public bool hasOutput;
     public float waitTime;
     public string triggerFunction;
+    public string fmodVoiceOver;
 
     [HideInInspector]
     public string dialogueName = "Untitled";
@@ -43,6 +44,9 @@ public class DialogueSettings {
         Computer,
         Avaline,
         Sam,
+        Nurse,
+        Doctor,
+        UncleDavid,
         Unknown,
         Empty
     }
@@ -59,7 +63,9 @@ public class DialogueSettings {
         PreloadWithFadeIn,
         PreloadWithFadeOut,
         PreloadWithFadeInAndOut,
-        Preload
+        Preload,
+        StopMovement,
+        StartMovement
     }
 
 

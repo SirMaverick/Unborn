@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 81b4fd9119633b0409358b57183018a5
+timeCreated: 1497786575
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cloth1
+    100002: CurtainRail_6
+    100004: //RootNode
+    100006: transform1
+    100008: transform2
+    100010: transform3
+    100012: transform4
+    100014: transform5
+    100016: transform6
+    100018: transform7
+    100020: transform8
+    100022: WallsAndFloor1
+    100024: WallsAndFloor10
+    100026: WallsAndFloor2
+    100028: WallsAndFloor3
+    100030: WallsAndFloor4
+    100032: WallsAndFloor5
+    100034: WallsAndFloor6
+    100036: WallsAndFloor7
+    100038: WallsAndFloor8
+    100040: WallsAndFloor9
+    400000: Cloth1
+    400002: CurtainRail_6
+    400004: //RootNode
+    400006: transform1
+    400008: transform2
+    400010: transform3
+    400012: transform4
+    400014: transform5
+    400016: transform6
+    400018: transform7
+    400020: transform8
+    400022: WallsAndFloor1
+    400024: WallsAndFloor10
+    400026: WallsAndFloor2
+    400028: WallsAndFloor3
+    400030: WallsAndFloor4
+    400032: WallsAndFloor5
+    400034: WallsAndFloor6
+    400036: WallsAndFloor7
+    400038: WallsAndFloor8
+    400040: WallsAndFloor9
+    2300000: Cloth1
+    2300002: CurtainRail_6
+    2300004: WallsAndFloor10
+    2300006: WallsAndFloor9
+    3300000: Cloth1
+    3300002: CurtainRail_6
+    3300004: WallsAndFloor10
+    3300006: WallsAndFloor9
+    4300000: WallsAndFloor9
+    4300002: CurtainRail_6
+    4300004: Cloth1
+    4300006: WallsAndFloor10
+    6400000: Cloth1
+    6400002: CurtainRail_6
+    6400004: WallsAndFloor10
+    6400006: WallsAndFloor9
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

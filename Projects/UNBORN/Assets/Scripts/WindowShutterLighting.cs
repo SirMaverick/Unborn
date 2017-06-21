@@ -43,7 +43,7 @@ public class WindowShutterLighting : MonoBehaviour {
 
         if (IntimacyMode == true && WindowShutters.GetComponent<WindowShutters>().ShuttersOpen == false)
         {
-            gameObject.GetComponent<Light>().color = new Color(1f, 0.08f, 0.5f);
+            gameObject.GetComponent<Light>().color = new Color(1f, 0, 0);
             if (GetComponent<Light>().intensity < 3)
             {
                 GetComponent<Light>().intensity += 0.03f;

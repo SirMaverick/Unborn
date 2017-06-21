@@ -66,6 +66,10 @@ public class DialogueNode : BaseInputNode {
                 container.triggerFunction = "PreloadWithFadeInAndOut";
             } else if (container.triggerType == DialogueSettings.TriggerType.Preload) {
                 container.triggerFunction = "Preload";
+            } else if (container.triggerType == DialogueSettings.TriggerType.StopMovement) {
+                container.triggerFunction = "StopMovement";
+            } else if (container.triggerType == DialogueSettings.TriggerType.StartMovement) {
+                container.triggerFunction = "StartMovement";
             }
             container.waitTime = EditorGUILayout.FloatField(container.waitTime);    
         } else if (container.isChoice == false) {
@@ -79,20 +83,42 @@ public class DialogueNode : BaseInputNode {
                 container.waitTime = EditorGUILayout.FloatField(container.waitTime);
             } else if (container.dialogueType == DialogueSettings.DialogueType.Character) {
                 container.characterList = (DialogueSettings.CharacterType)EditorGUILayout.EnumPopup("Character : ", container.characterList);
-                if (container.characterList == DialogueSettings.CharacterType.Avaline) {
-                    container.character = "Avaline: ";
-                } else if (container.characterList == DialogueSettings.CharacterType.Computer) {
-                    container.character = "Computer: ";
-                } else if (container.characterList == DialogueSettings.CharacterType.Sam) {
-                    container.character = "Sam: ";
-                } else if (container.characterList == DialogueSettings.CharacterType.Unknown) {
-                    container.character = "???: ";
-                } else if (container.characterList == DialogueSettings.CharacterType.Empty) {
-                    container.character = "";
+
+                switch (container.characterList) {
+                    case DialogueSettings.CharacterType.Avaline:
+                        container.character = "Avaline";
+                        break;
+                    case DialogueSettings.CharacterType.Computer:
+                        container.character = "Computer";
+                        break;
+                    case DialogueSettings.CharacterType.Sam:
+                        container.character = "Sam";
+                        break;
+                    case DialogueSettings.CharacterType.Doctor:
+                        container.character = "Doctor";
+                        break;
+                    case DialogueSettings.CharacterType.Nurse:
+                        container.character = "Nurse";
+                        break;
+                    case DialogueSettings.CharacterType.UncleDavid:
+                        container.character = "Uncle David";
+                        break;
+                    case DialogueSettings.CharacterType.Unknown:
+                        container.character = "???";
+                        break;
+                    case DialogueSettings.CharacterType.Empty:
+                        container.character = "";
+                        break;
+
                 }
 
+
+
             } else if (container.dialogueType == DialogueSettings.DialogueType.Audio ) {
-                container.voiceOver = EditorGUILayout.ObjectField(container.voiceOver, typeof(AudioClip), false) as AudioClip;
+
+                container.fmodVoiceOver = EditorGUILayout.TextField(container.fmodVoiceOver);
+
+                //container.voiceOver = EditorGUILayout.ObjectField(container.voiceOver, typeof(AudioClip), false) as AudioClip;
             }
         } else {
             container.dialogueText = EditorGUILayout.TextArea(container.dialogueText, GUILayout.Width(150), GUILayout.Height(25));

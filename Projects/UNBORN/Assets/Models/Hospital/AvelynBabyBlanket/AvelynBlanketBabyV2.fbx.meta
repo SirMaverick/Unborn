@@ -1,0 +1,244 @@
+fileFormatVersion: 2
+guid: f744734da2d15a84a8d120228827a8e2
+timeCreated: 1497794520
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Chest
+    100004: Clavicle
+    100006: ElbowLeft
+    100008: ElbowRight
+    100010: FootLeft
+    100012: FootRight
+    100014: freddi_hightmore__001_freddi_hightmore__001_Tex_0599_0_dds_Tex_05_Tex_0599_0_dds
+    100016: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds
+    100018: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds1
+    100020: group
+    100022: group1
+    100024: group2
+    100026: group3
+    100028: group4
+    100030: HandLeft
+    100032: HandRight
+    100034: HipLeft
+    100036: HipRight
+    100038: joint10
+    100040: joint14
+    100042: joint20
+    100044: joint21
+    100046: joint22
+    100048: joint24
+    100050: joint25
+    100052: joint26
+    100054: joint27
+    100056: joint28
+    100058: joint29
+    100060: joint30
+    100062: joint31
+    100064: joint32
+    100066: joint33
+    100068: joint34
+    100070: joint35
+    100072: joint36
+    100074: joint37
+    100076: joint38
+    100078: joint39
+    100080: joint40
+    100082: joint41
+    100084: joint42
+    100086: KneeLeft
+    100088: KneeRight
+    100090: Neck
+    100092: pasted__pasted__skin1
+    100094: pasted__pCube1
+    100096: pasted__pPlane1
+    100098: pCube1
+    100100: polySurface5
+    100102: polySurface5 1
+    100104: polySurface6
+    100106: polySurface7
+    100108: polySurface8
+    100110: polySurface9
+    100112: ShoulderLeft
+    100114: ShoulderRight
+    100116: Spine
+    100118: transform1
+    100120: transform2
+    100122: transform3
+    100124: transform4
+    100126: transform5
+    100128: transform6
+    100130: transform7
+    100132: transform8
+    100134: WallsAndFloor1
+    100136: WallsAndFloor2
+    100138: WallsAndFloor3
+    100140: WallsAndFloor4
+    100142: WallsAndFloor5
+    100144: WallsAndFloor6
+    100146: WallsAndFloor7
+    100148: WallsAndFloor8
+    100150: WristLeft
+    400000: //RootNode
+    400002: Chest
+    400004: Clavicle
+    400006: ElbowLeft
+    400008: ElbowRight
+    400010: FootLeft
+    400012: FootRight
+    400014: freddi_hightmore__001_freddi_hightmore__001_Tex_0599_0_dds_Tex_05_Tex_0599_0_dds
+    400016: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds
+    400018: freddi_hightmore_fred_freddi_hightmore_fred_Tex_0601_0_dds_Tex_06_Tex_0601_0_dds1
+    400020: group
+    400022: group1
+    400024: group2
+    400026: group3
+    400028: group4
+    400030: HandLeft
+    400032: HandRight
+    400034: HipLeft
+    400036: HipRight
+    400038: joint10
+    400040: joint14
+    400042: joint20
+    400044: joint21
+    400046: joint22
+    400048: joint24
+    400050: joint25
+    400052: joint26
+    400054: joint27
+    400056: joint28
+    400058: joint29
+    400060: joint30
+    400062: joint31
+    400064: joint32
+    400066: joint33
+    400068: joint34
+    400070: joint35
+    400072: joint36
+    400074: joint37
+    400076: joint38
+    400078: joint39
+    400080: joint40
+    400082: joint41
+    400084: joint42
+    400086: KneeLeft
+    400088: KneeRight
+    400090: Neck
+    400092: pasted__pasted__skin1
+    400094: pasted__pCube1
+    400096: pasted__pPlane1
+    400098: pCube1
+    400100: polySurface5
+    400102: polySurface5 1
+    400104: polySurface6
+    400106: polySurface7
+    400108: polySurface8
+    400110: polySurface9
+    400112: ShoulderLeft
+    400114: ShoulderRight
+    400116: Spine
+    400118: transform1
+    400120: transform2
+    400122: transform3
+    400124: transform4
+    400126: transform5
+    400128: transform6
+    400130: transform7
+    400132: transform8
+    400134: WallsAndFloor1
+    400136: WallsAndFloor2
+    400138: WallsAndFloor3
+    400140: WallsAndFloor4
+    400142: WallsAndFloor5
+    400144: WallsAndFloor6
+    400146: WallsAndFloor7
+    400148: WallsAndFloor8
+    400150: WristLeft
+    2300000: pasted__pasted__skin1
+    2300002: pasted__pCube1
+    2300004: pasted__pPlane1
+    2300006: pCube1
+    3300000: pasted__pasted__skin1
+    3300002: pasted__pCube1
+    3300004: pasted__pPlane1
+    3300006: pCube1
+    4300000: polySurface5
+    4300002: pCube1
+    4300004: pasted__pasted__skin1
+    4300006: pasted__pCube1
+    4300008: pasted__pPlane1
+    9500000: //RootNode
+    13700000: polySurface5
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 15
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

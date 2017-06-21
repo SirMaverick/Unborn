@@ -26,7 +26,7 @@ public class Sam_LookatPlayer : MonoBehaviour {
         
 
 
-        if (LookAtPlayer == true && Vector3.Distance(Player.transform.position, samHead.transform.position) < 3)
+        if (LookAtPlayer == true)
         {
            samHead.transform.rotation = Quaternion.Slerp(samHead.transform.rotation,TargetRotation * new Quaternion (0, 2, 0, 0), 4f * Time.deltaTime);
         }
