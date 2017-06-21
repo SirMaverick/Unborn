@@ -128,6 +128,10 @@
     <Compile Include="Assets\Scripts\Scene3\InteractWithDrawing.cs" />
     <Compile Include="Assets\Scripts\Scene3\TalkToSam.cs" />
     <Compile Include="Assets\Scripts\Scene4\StartTextCycle.cs" />
+    <Compile Include="Assets\Scripts\Scene8\ShowBloodtracks.cs" />
+    <Compile Include="Assets\Scripts\Scene8\StartChat.cs" />
+    <Compile Include="Assets\Scripts\Scene8\StartDistortion.cs" />
+    <Compile Include="Assets\Scripts\Scene8\TalkToTracy.cs" />
     <Compile Include="Assets\Scripts\Screen_LightOn.cs" />
     <Compile Include="Assets\Scripts\Texture_Logo_Center_FadeIn.cs" />
     <Compile Include="Assets\Scripts\Texture_Screen_Flicker.cs" />

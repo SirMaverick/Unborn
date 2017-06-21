@@ -48,7 +48,8 @@ public class DialogueSettings {
         Doctor,
         UncleDavid,
         Unknown,
-        Empty
+        Empty,
+        Tracy
     }
 
     public enum DialogueType {
@@ -65,7 +66,9 @@ public class DialogueSettings {
         PreloadWithFadeInAndOut,
         Preload,
         StopMovement,
-        StartMovement
+        StartMovement,
+        StartDistortionEffect,
+        StopDistortionEffect
     }
 
 

@@ -103,6 +103,7 @@ public class ReplaceSubtitles : MonoBehaviour {
 
         } else if(currentNode.isChoice == false) {
             //charName.text = d.character;
+            
             subtitles.text = d.character + ": " + d.dialogueText;
 
             yield return new WaitForSeconds(waitTime);
@@ -190,6 +191,9 @@ public class ReplaceSubtitles : MonoBehaviour {
 
         }
         int currentScene = SceneManager.GetActiveScene().buildIndex + 1;
+        if(characterName == "Uncle David") {
+            characterName = "Uncle";
+        }
         snapshot = RuntimeManager.CreateInstance("event:/VO/Scene" + currentScene + "/" + characterName + "/" + audioFile);
         snapshot.start();
         snapshot.release();
@@ -241,6 +245,10 @@ public class ReplaceSubtitles : MonoBehaviour {
             StopMovement.MovementOn();
         } else if (name == "StopMovement") {
             StopMovement.MovementOff(60, -60);
+        } else if (name == "StartDistortionEffect") {
+            StartDistortion.StartDistortionEffect();
+        } else if (name == "StopDistortionEffect") {
+            StartDistortion.StopDistortionEffect();
         }
     }
 }

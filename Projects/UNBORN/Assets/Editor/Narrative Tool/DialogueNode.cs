@@ -70,6 +70,10 @@ public class DialogueNode : BaseInputNode {
                 container.triggerFunction = "StopMovement";
             } else if (container.triggerType == DialogueSettings.TriggerType.StartMovement) {
                 container.triggerFunction = "StartMovement";
+            } else if (container.triggerType == DialogueSettings.TriggerType.StartDistortionEffect) {
+                container.triggerFunction = "StartDistortionEffect";
+            } else if (container.triggerType == DialogueSettings.TriggerType.StopDistortionEffect) {
+                container.triggerFunction = "StopDistortionEffect";
             }
             container.waitTime = EditorGUILayout.FloatField(container.waitTime);    
         } else if (container.isChoice == false) {
@@ -102,6 +106,9 @@ public class DialogueNode : BaseInputNode {
                         break;
                     case DialogueSettings.CharacterType.UncleDavid:
                         container.character = "Uncle David";
+                        break;
+                    case DialogueSettings.CharacterType.Tracy:
+                        container.character = "Tracy";
                         break;
                     case DialogueSettings.CharacterType.Unknown:
                         container.character = "???";
