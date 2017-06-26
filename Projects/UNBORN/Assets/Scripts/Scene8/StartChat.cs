@@ -31,6 +31,7 @@ public class StartChat : MonoBehaviour {
                 go.SetActive(true);
             }
             done = true;
+            GameObject.Find("BGM").GetComponent<AudioSource>().Play();
             Destroy(GetComponent<CharacterStorySettings>());
             Destroy(this);
         }

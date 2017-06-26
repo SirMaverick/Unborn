@@ -23,7 +23,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
                 isVisible = true;
             }
 
-            if (isVisible && Input.GetKeyDown("joystick button 0")) {
+            if (isVisible && (Input.GetKeyDown("joystick button 0") || Input.GetKeyDown(KeyCode.Z))) {
                 StartCoroutine(MoveAvalineOutBed());
                 interactText.enabled = false;
             }

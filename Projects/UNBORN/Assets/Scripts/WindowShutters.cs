@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WindowShutters : MonoBehaviour {
 
-
+    bool inHouse;
     public bool ShuttersOpen;
     public bool ShuttersOpened;
 
@@ -69,5 +69,12 @@ public class WindowShutters : MonoBehaviour {
         Shutter4.GetComponent<Animation>().Play("WindowShuttersClose");
         yield return new WaitForSeconds(5f);
         ShuttersOpened = false;
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "Player" && inHouse == false) {
+            inHouse = true;
+            StartCoroutine(ShutterOpen());
+         }
     }
 }

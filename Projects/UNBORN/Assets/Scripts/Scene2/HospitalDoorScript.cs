@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class HospitalDoorScript : MonoBehaviour {
 
-    public bool DoorMoving;
-    public bool DoorOpen;
     bool chat1, chat2, chat3;
 
     public static int amountOfDoorsOpened;
@@ -15,8 +13,6 @@ public class HospitalDoorScript : MonoBehaviour {
     Text interactText;
     GameObject camera;
     public GameObject hospitalRoom;
-    public Transform newHospitalPos;
-    public Animation Anim;
     RaycastHit hit;
     GameObject storyContainer;
 
@@ -24,7 +20,6 @@ public class HospitalDoorScript : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        Anim = gameObject.GetComponent<Animation>();
         Player = GameObject.Find("Player");
         storyContainer = GameObject.Find("StoryContainer");
         interactText = GameObject.Find("InteractText").GetComponent<Text>();
@@ -42,12 +37,12 @@ public class HospitalDoorScript : MonoBehaviour {
                     interactText.enabled = true;
                 }
 
-                if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0") && DoorMoving == false && Vector3.Distance(Player.transform.position, gameObject.transform.position) < 1.8f) {
-                    if (DoorOpen == false) {
-                        StartCoroutine(OpenDoor());
+                if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0") && hit.transform.GetComponent<HospitalDoorContainer>().DoorMoving == false) {
+                    if (hit.transform.GetComponent<HospitalDoorContainer>().DoorOpen == false) {
+                        StartCoroutine(OpenDoor(hit.transform.GetComponent<HospitalDoorContainer>()));
 
                     } else {
-                        StartCoroutine(CloseDoor());
+                        StartCoroutine(CloseDoor(hit.transform.GetComponent<HospitalDoorContainer>()));
                     }
                 }
 
@@ -76,9 +71,9 @@ public class HospitalDoorScript : MonoBehaviour {
         }
     }
 
-    void SetHospitalRoom() {
-        hospitalRoom.transform.rotation = newHospitalPos.rotation;
-        hospitalRoom.transform.position = newHospitalPos.position;
+    void SetHospitalRoom(HospitalDoorContainer go) {
+        hospitalRoom.transform.rotation = go.newHospitalPos.rotation;
+        hospitalRoom.transform.position = go.newHospitalPos.position;
     }
 
     void HideInteractButton() {
@@ -87,27 +82,27 @@ public class HospitalDoorScript : MonoBehaviour {
 
     }
 
-    IEnumerator OpenDoor()
+    IEnumerator OpenDoor(HospitalDoorContainer go)
     {
-        DoorMoving = true;
-        SetHospitalRoom();
+        go.DoorMoving = true;
+        SetHospitalRoom(go);
         yield return new WaitForSeconds(0.5f);
-        GetComponent<Animation>().Play("HospitalDoorOpen");
+        go.GetComponent<Animation>().Play("HospitalDoorOpen");
         
-        DoorOpen = true;
-        DoorMoving = false;
+        go.DoorOpen = true;
+        go.DoorMoving = false;
         yield return new WaitForSeconds(1.5f);
         amountOfDoorsOpened++;
         yield return new WaitForSeconds(2.0f);
-        StartCoroutine(CloseDoor());
+        StartCoroutine(CloseDoor(go));
     }
 
-    IEnumerator CloseDoor()
+    IEnumerator CloseDoor(HospitalDoorContainer go)
     {
-        DoorMoving = true;
+        go.DoorMoving = true;
         yield return new WaitForSeconds(1.5f);
-        GetComponent<Animation>().Play("HospitalDoorClose");
-        DoorOpen = false;
-        DoorMoving = false;
+        go.GetComponent<Animation>().Play("HospitalDoorClose");
+        go.DoorOpen = false;
+        go.DoorMoving = false;
     }
 }

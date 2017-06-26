@@ -59,7 +59,7 @@ public class ReplaceSubtitles : MonoBehaviour {
         else if (Input.GetKeyDown(KeyCode.Alpha2)) {
             currentNode.choice2 = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3)) {
+        else if (Input.GetKeyDown(KeyCode.Alpha3) ) {
             currentNode.choice3 = true;
         }
 
@@ -249,6 +249,10 @@ public class ReplaceSubtitles : MonoBehaviour {
             StartDistortion.StartDistortionEffect();
         } else if (name == "StopDistortionEffect") {
             StartDistortion.StopDistortionEffect();
+        } else if (name == "PreloadCrash") {
+            StartCoroutine(PreloadLevel.PreloadCrashScene());
+        } else if (name == "PreloadFromCrash") {
+            StartCoroutine(PreloadLevel.PreloadFromCrashScene());
         }
     }
 }

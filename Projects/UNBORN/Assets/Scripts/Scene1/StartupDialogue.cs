@@ -15,6 +15,7 @@ public class StartupDialogue : MonoBehaviour {
             if (storyList[i].dialogueName == storyUsed) {
                 ReplaceSubtitles.instance.currentStory = storyList[i];
                 ReplaceSubtitles.instance.start = true;
+                Destroy(storyList[i]);
                 break;
             }
         }

@@ -68,7 +68,9 @@ public class DialogueSettings {
         StopMovement,
         StartMovement,
         StartDistortionEffect,
-        StopDistortionEffect
+        StopDistortionEffect,
+        PreloadCrash,
+        PreloadFromCrash
     }
 
 

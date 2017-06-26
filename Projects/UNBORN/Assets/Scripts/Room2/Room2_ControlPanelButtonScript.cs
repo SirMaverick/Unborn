@@ -53,4 +53,10 @@ public class Room2_ControlPanelButtonScript : MonoBehaviour
 
         }
     }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "Player") {
+
+        }
+    }
 }

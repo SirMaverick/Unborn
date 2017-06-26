@@ -7,7 +7,9 @@ public class FinalScene_Button : MonoBehaviour {
     public GameObject ButtonMid;
     public GameObject ButtonConsole;
 
+
     public bool ButtonDown;
+    public bool startButton;
 
 	// Use this for initialization
 	void Start () {
@@ -16,7 +18,7 @@ public class FinalScene_Button : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.G) == true && ButtonDown == false)
+		if(startButton && ButtonDown == false)
         {
             ButtonDown = true;
             GetComponent<Animation>().Play();

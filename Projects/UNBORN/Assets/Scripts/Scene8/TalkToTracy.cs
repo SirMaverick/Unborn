@@ -31,6 +31,7 @@ public class TalkToTracy : MonoBehaviour {
                     if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0")) {
                         ReplaceSubtitles.instance.currentStory = GetComponent<CharacterStorySettings>();
                         ReplaceSubtitles.instance.start = true;
+                        GameObject.Find("TracyAudio").GetComponent<AudioSource>().Stop();
                         Destroy(this);
                     }
                 } else {

@@ -10,6 +10,9 @@ public class StartTextCycle : MonoBehaviour {
     RaycastHit hit;
     Text interactText;
     float speed = 2;
+    int amountsOfPushing;
+    public GameObject samOnBike;
+    public GameObject samOffBike;
 
 	// Use this for initialization
 	void Start () {
@@ -32,14 +35,14 @@ public class StartTextCycle : MonoBehaviour {
                 if (interactText.enabled == false) {
                     ShowInteractButton(hit.transform.gameObject);
                 }
-                
+
 
                 if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0")) {
-                    
-                    StartCoroutine(PushBicycle());
-                    ReplaceSubtitles.instance.currentStory = hit.collider.GetComponent<CharacterStorySettings>();
-                    ReplaceSubtitles.instance.start = true;
-                    Destroy(hit.collider.GetComponent<CharacterStorySettings>());
+
+                    StartCoroutine(PushBicycle(hit.collider));
+                        ReplaceSubtitles.instance.currentStory = hit.collider.GetComponent<CharacterStorySettings>();
+                        ReplaceSubtitles.instance.start = true;
+                        Destroy(hit.collider.GetComponent<CharacterStorySettings>());
                 }
 
             } else {
@@ -61,13 +64,33 @@ public class StartTextCycle : MonoBehaviour {
 
     }
 
-    IEnumerator PushBicycle() {
+    IEnumerator PushBicycle(Collider other) {
+        amountsOfPushing++;
         float step = speed * Time.deltaTime;
         Vector3 targetPos = new Vector3(transform.position.x, transform.position.y, transform.position.z + speed * 8);
         while (transform.position.z != targetPos.z) {
             transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
             yield return new WaitForSeconds(0.02f);
+        } if (amountsOfPushing == 5) {
+            while(ReplaceSubtitles.instance.play == true) {
+                yield return new WaitForSeconds(0.02f);
+            } StartCoroutine(PushBicycle(other));
+            yield return new WaitForSeconds(2.0f);
+            ReplaceSubtitles.instance.currentStory = other.GetComponent<CharacterStorySettings>();
+            ReplaceSubtitles.instance.start = true;
+            Destroy(other.GetComponent<CharacterStorySettings>());
+            samOnBike.SetActive(false);
+            samOffBike.SetActive(true);
         }
         
+    }
+
+    IEnumerator FifthPush(Collider other) {
+        yield return new WaitForSeconds(2.0f);
+        ReplaceSubtitles.instance.currentStory = other.GetComponent<CharacterStorySettings>();
+        ReplaceSubtitles.instance.start = true;
+        Destroy(other.GetComponent<CharacterStorySettings>());
+        samOnBike.SetActive(false);
+        samOffBike.SetActive(true);
     }
 }

@@ -74,6 +74,10 @@ public class DialogueNode : BaseInputNode {
                 container.triggerFunction = "StartDistortionEffect";
             } else if (container.triggerType == DialogueSettings.TriggerType.StopDistortionEffect) {
                 container.triggerFunction = "StopDistortionEffect";
+            } else if (container.triggerType == DialogueSettings.TriggerType.PreloadCrash) {
+                container.triggerFunction = "PreloadCrash";
+            } else if (container.triggerType == DialogueSettings.TriggerType.PreloadFromCrash) {
+                container.triggerFunction = "PreloadFromCrash";
             }
             container.waitTime = EditorGUILayout.FloatField(container.waitTime);    
         } else if (container.isChoice == false) {

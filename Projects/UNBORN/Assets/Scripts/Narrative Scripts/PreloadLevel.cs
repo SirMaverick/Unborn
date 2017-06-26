@@ -86,4 +86,29 @@ public class PreloadLevel : MonoBehaviour {
             }
         }
     }
+
+
+    public static IEnumerator PreloadCrashScene() {
+        int currentLevel = 9;
+        AsyncOperation async = SceneManager.LoadSceneAsync(currentLevel);
+        async.allowSceneActivation = false;
+        while (!async.isDone) {
+            if (async.progress == 0.9f) {
+                yield return new WaitForSeconds(2);
+                async.allowSceneActivation = true;
+            }
+        }
+    }
+
+    public static IEnumerator PreloadFromCrashScene() {
+        int currentLevel = 5;
+        AsyncOperation async = SceneManager.LoadSceneAsync(currentLevel);
+        async.allowSceneActivation = false;
+        while (!async.isDone) {
+            if (async.progress == 0.9f) {
+                yield return new WaitForSeconds(2);
+                async.allowSceneActivation = true;
+            }
+        }
+    }
 }

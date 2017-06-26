@@ -7,6 +7,8 @@ public class Room2_Hologram_Shader : MonoBehaviour {
     public float Transparancy;
     public float Offset;
 
+    bool inHouse;
+
     public GameObject Player;
     public GameObject ControlPanel;
 
@@ -62,6 +64,12 @@ public class Room2_Hologram_Shader : MonoBehaviour {
                 Offset -= 0.05f;
             }
             GetComponent<Renderer>().material.SetFloat("_Offset", Offset);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.tag == "Player" && inHouse == false) {
+            gameObject.GetComponent<ParticleSystem>().Play();
         }
     }
 
