@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/HospitalRoom.unity
+- path: Assets/Churchh.unity
   isLoaded: 1
   isActive: 1
