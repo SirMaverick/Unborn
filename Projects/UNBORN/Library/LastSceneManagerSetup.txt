@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Churchh.unity
+- path: Assets/Room_2_Morning.unity
   isLoaded: 1
   isActive: 1
