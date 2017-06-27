@@ -14,325 +14,187 @@
 [LOG] SystemI::init                            : create the stream thread
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000000A58A1E38 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000000042A024C8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] SystemI::createSoundInternal             : filename =  : mode 02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 20485152
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 302208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000074E2FBF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFFCB36730
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFFCB36700
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFFCB36800
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFFCB368B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000A54ABE48
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Format has 1 subsounds.
-[LOG] SystemI::createSoundInternal             : Create as FMOD_CREATESAMPLE
-[LOG] SystemI::createSoundInternal             : Multi-sample sound (1 subsounds), create a sample container.
-[LOG] SystemI::createSoundInternal             : creating subsound 0/1
-[LOG] SystemI::createSample                    : mode 02000202 length 145154 samples, lengthbytes 28896
-[LOG] SystemI::createSample                    : channels = 2
-[LOG] SystemI::createSample                    : output = 00000000A58E51D8
-[LOG] OutputSoftware::createSample             : lengthpcm 145154, lengthbytes 28896, channels 2, format 2, freq 48000, mode 0200020a
-[LOG] SystemI::createSoundInternal             : No name found in file, use filename.
-[LOG] SystemI::createSoundInternal             : done.  OpenState now = FMOD_OPENSTATE_READY.
-
-[LOG] SystemI::createSoundInternal             : filename =  : mode 02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 20485152
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 302208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000074E2FBF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFFCB36730
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFFCB36700
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFFCB36800
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFFCB368B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000A54AC6C8
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Format has 1 subsounds.
-[LOG] SystemI::createSoundInternal             : Create as FMOD_CREATESAMPLE
-[LOG] SystemI::createSoundInternal             : Multi-sample sound (1 subsounds), create a sample container.
-[LOG] SystemI::createSoundInternal             : creating subsound 0/1
-[LOG] SystemI::createSample                    : mode 02000202 length 164303 samples, lengthbytes 28544
-[LOG] SystemI::createSample                    : channels = 1
-[LOG] SystemI::createSample                    : output = 00000000A58E51D8
-[LOG] OutputSoftware::createSample             : lengthpcm 164303, lengthbytes 28544, channels 1, format 2, freq 48000, mode 0200020a
-[LOG] SystemI::createSoundInternal             : No name found in file, use filename.
-[LOG] SystemI::createSoundInternal             : done.  OpenState now = FMOD_OPENSTATE_READY.
-
-[LOG] SystemI::createSoundInternal             : filename =  : mode 02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 20485152
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 302208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000074E2FBF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFFCB36730
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFFCB36700
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFFCB36800
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFFCB368B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000A54ACD28
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Format has 1 subsounds.
-[LOG] SystemI::createSoundInternal             : Create as FMOD_CREATESAMPLE
-[LOG] SystemI::createSoundInternal             : Multi-sample sound (1 subsounds), create a sample container.
-[LOG] SystemI::createSoundInternal             : creating subsound 0/1
-[LOG] SystemI::createSample                    : mode 02000202 length 103853 samples, lengthbytes 17824
-[LOG] SystemI::createSample                    : channels = 1
-[LOG] SystemI::createSample                    : output = 00000000A58E51D8
-[LOG] OutputSoftware::createSample             : lengthpcm 103853, lengthbytes 17824, channels 1, format 2, freq 48000, mode 0200020a
-[LOG] SystemI::createSoundInternal             : No name found in file, use filename.
-[LOG] SystemI::createSoundInternal             : done.  OpenState now = FMOD_OPENSTATE_READY.
-
-[LOG] SystemI::createSoundInternal             : filename =  : mode 02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 20485152
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 302208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000074E2FBF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFFCB36730
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFFCB36700
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFFCB36800
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFFCB368B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000A54AD9E8
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Format has 1 subsounds.
-[LOG] SystemI::createSoundInternal             : Create as FMOD_CREATESAMPLE
-[LOG] SystemI::createSoundInternal             : Multi-sample sound (1 subsounds), create a sample container.
-[LOG] SystemI::createSoundInternal             : creating subsound 0/1
-[LOG] SystemI::createSample                    : mode 02000202 length 47904 samples, lengthbytes 8672
-[LOG] SystemI::createSample                    : channels = 1
-[LOG] SystemI::createSample                    : output = 00000000A58E51D8
-[LOG] OutputSoftware::createSample             : lengthpcm 47904, lengthbytes 8672, channels 1, format 2, freq 48000, mode 0200020a
-[LOG] SystemI::createSoundInternal             : No name found in file, use filename.
-[LOG] SystemI::createSoundInternal             : done.  OpenState now = FMOD_OPENSTATE_READY.
-
-[LOG] SystemI::createSoundInternal             : filename =  : mode 02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 20485152
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 302208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000074E2FBF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFFCB36730
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFFCB36700
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFFCB36800
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFFCB368B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000A54AD5A8
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Format has 1 subsounds.
-[LOG] SystemI::createSoundInternal             : Create as FMOD_CREATESAMPLE
-[LOG] SystemI::createSoundInternal             : Multi-sample sound (1 subsounds), create a sample container.
-[LOG] SystemI::createSoundInternal             : creating subsound 0/1
-[LOG] SystemI::createSample                    : mode 02000202 length 165984 samples, lengthbytes 29664
-[LOG] SystemI::createSample                    : channels = 1
-[LOG] SystemI::createSample                    : output = 00000000A58E51D8
-[LOG] OutputSoftware::createSample             : lengthpcm 165984, lengthbytes 29664, channels 1, format 2, freq 48000, mode 0200020a
-[LOG] SystemI::createSoundInternal             : No name found in file, use filename.
-[LOG] SystemI::createSoundInternal             : done.  OpenState now = FMOD_OPENSTATE_READY.
-
-[LOG] SystemI::createSoundInternal             : filename =  : mode 02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 20485152
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 302208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000074E2FBF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFFCB36730
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFFCB36700
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFFCB36800
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFFCB368B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000A54AC288
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Format has 1 subsounds.
-[LOG] SystemI::createSoundInternal             : Create as FMOD_CREATESAMPLE
-[LOG] SystemI::createSoundInternal             : Multi-sample sound (1 subsounds), create a sample container.
-[LOG] SystemI::createSoundInternal             : creating subsound 0/1
-[LOG] SystemI::createSample                    : mode 02000202 length 177321 samples, lengthbytes 32864
-[LOG] SystemI::createSample                    : channels = 1
-[LOG] SystemI::createSample                    : output = 00000000A58E51D8
-[LOG] OutputSoftware::createSample             : lengthpcm 177321, lengthbytes 32864, channels 1, format 2, freq 48000, mode 0200020a
-[LOG] SystemI::createSoundInternal             : No name found in file, use filename.
-[LOG] SystemI::createSoundInternal             : done.  OpenState now = FMOD_OPENSTATE_READY.
-
-[LOG] SystemI::createSoundInternal             : filename =  : mode 02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 20485152
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 302208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000074E2FBF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFFCB36730
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFFCB36700
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFFCB36800
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFFCB368B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000A54AC4A8
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Format has 1 subsounds.
-[LOG] SystemI::createSoundInternal             : Create as FMOD_CREATESAMPLE
-[LOG] SystemI::createSoundInternal             : Multi-sample sound (1 subsounds), create a sample container.
-[LOG] SystemI::createSoundInternal             : creating subsound 0/1
-[LOG] SystemI::createSample                    : mode 02000202 length 285743 samples, lengthbytes 53504
-[LOG] SystemI::createSample                    : channels = 1
-[LOG] SystemI::createSample                    : output = 00000000A58E51D8
-[LOG] OutputSoftware::createSample             : lengthpcm 285743, lengthbytes 53504, channels 1, format 2, freq 48000, mode 0200020a
-[LOG] SystemI::createSoundInternal             : No name found in file, use filename.
-[LOG] SystemI::createSoundInternal             : done.  OpenState now = FMOD_OPENSTATE_READY.
-
-[LOG] SystemI::createSound                     : filename = Assets/Audio\Desktop/Master Bank.bank : mode 02012082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000000537D8A98 : node = 00000000A5775D70
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000A4CE6558.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000537D8A98
-[LOG] SystemI::createSoundInternal             :     filename = Assets/Audio\Desktop/Master Bank.bank : mode 02012082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 20485152
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 302208
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A5775E88
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     Format has 1 subsounds.
-[LOG] SystemI::createSoundInternal             :     Create as FMOD_CREATESTREAM
-[LOG] System::createSoundInternal              :     decode buffersize = 19200 : blocksize = 256 : format = 2
-[LOG] SystemI::createSample                    :     mode 02012082 length 19200 samples, lengthbytes 829728
-[LOG] SystemI::createSample                    :     channels = 2
-[LOG] SystemI::createSample                    :     output = 00000000A58E51D8
-[LOG] OutputSoftware::createSample             :     lengthpcm 19200, lengthbytes 829728, channels 2, format 2, freq 48000, mode 0201208a
-[LOG] System::createSoundInternal              :     1 subsounds detected.
-[LOG] System::createSoundInternal              :     Seek stream to start
-[LOG] System::createSoundInternal              :     switch file handle from small blocking single buffered to large nonblocking doublebuffered.
-[LOG] SystemI::createSoundInternal             :     done.  OpenState now = FMOD_OPENSTATE_READY.
-
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000537D8A98
-[LOG] SoundI::getSubSound                      : sound 00000000537D8A98.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
-[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000537D7808
-[LOG] AsyncThread::threadFunc                  :     done setposition
-[LOG] AsyncThread::threadFunc                  :     done flush
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000537D7808
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000537D7808
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000537D7808
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000537D7808
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000537D7808
-[LOG] SoundI::release                          : hallway_ambience (00000000537D7EC8)
-[LOG] SoundI::release                          : remove stream samples. (00000000537D7EC8)
-[LOG] SoundI::release                          :     hallway_ambience (00000000A4CE6748)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release subsounds. (00000000537D7EC8)
-[LOG] SoundI::release                          :     hallway_ambience (00000000537D8738)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000537D7EC8)
-[LOG] SoundI::release                          : done
-[LOG] SystemI::createSoundInternal             : filename =  : mode 02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 20485152
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 302208
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0000000074E2FBF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFFFCB36730
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFFFCB36700
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFFFCB36800
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFFFCB368B0
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000535C2568
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Format has 1 subsounds.
-[LOG] SystemI::createSoundInternal             : Create as FMOD_CREATESAMPLE
-[LOG] SystemI::createSoundInternal             : Multi-sample sound (1 subsounds), create a sample container.
-[LOG] SystemI::createSoundInternal             : creating subsound 0/1
-[LOG] SystemI::createSample                    : mode 02000202 length 90087 samples, lengthbytes 17568
-[LOG] SystemI::createSample                    : channels = 1
-[LOG] SystemI::createSample                    : output = 00000000A58E51D8
-[LOG] OutputSoftware::createSample             : lengthpcm 90087, lengthbytes 17568, channels 1, format 2, freq 48000, mode 0200020a
-[LOG] SystemI::createSoundInternal             : No name found in file, use filename.
-[LOG] SystemI::createSoundInternal             : done.  OpenState now = FMOD_OPENSTATE_READY.
-
-[LOG] SoundI::release                          : hallway_ambience (00000000537D8A98)
-[LOG] SoundI::release                          : remove stream samples. (00000000537D8A98)
-[LOG] SoundI::release                          :     hallway_ambience (00000000A4F0B748)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release subsounds. (00000000537D8A98)
-[LOG] SoundI::release                          :     hallway_ambience (00000000537D7808)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000537D8A98)
-[LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (00000000AAD3D4D8)
-[LOG] SoundI::release                          : release subsounds. (00000000AAD3D4D8)
-[LOG] SoundI::release                          :     door_open (00000000A4CE7C68)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000AAD3D4D8)
-[LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (00000000AAD3C398)
-[LOG] SoundI::release                          : release subsounds. (00000000AAD3C398)
-[LOG] SoundI::release                          :     Zin01 (00000000A4CE6F68)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000AAD3C398)
-[LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (00000000AAD3D368)
-[LOG] SoundI::release                          : release subsounds. (00000000AAD3D368)
-[LOG] SoundI::release                          :     Zin01 (00000000A4CE7AC8)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000AAD3D368)
-[LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (00000000AAD3CF18)
-[LOG] SoundI::release                          : release subsounds. (00000000AAD3CF18)
-[LOG] SoundI::release                          :     Zin02 (0000000053B87EC8)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000AAD3CF18)
-[LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (00000000AAD3C958)
-[LOG] SoundI::release                          : release subsounds. (00000000AAD3C958)
-[LOG] SoundI::release                          :     Zin03 (00000000A4CE7448)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000AAD3C958)
-[LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (00000000AAD3D088)
-[LOG] SoundI::release                          : release subsounds. (00000000AAD3D088)
-[LOG] SoundI::release                          :     Zin02 (0000000053B88888)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000AAD3D088)
-[LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (00000000AAD3C678)
-[LOG] SoundI::release                          : release subsounds. (00000000AAD3C678)
-[LOG] SoundI::release                          :     Zin04 (00000000A4F0D488)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000AAD3C678)
-[LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (00000000AAD3D1F8)
-[LOG] SoundI::release                          : release subsounds. (00000000AAD3D1F8)
-[LOG] SoundI::release                          :     Zin03 (00000000A4F0C108)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (00000000AAD3D1F8)
-[LOG] SoundI::release                          : done
-[LOG] SoundI::release                          :  (000000006DCC57B8)
-[LOG] SoundI::release                          : release subsounds. (000000006DCC57B8)
-[LOG] SoundI::release                          :     Zin02 (00000000A4CE68E8)
-[LOG] SoundI::release                          :     done
-[LOG] SoundI::release                          : release codec. (000000006DCC57B8)
-[LOG] SoundI::release                          : done
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
+[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
+[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
+[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
+[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
+[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
+[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
+[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
@@ -348,3 +210,4 @@
 [LOG] SystemI::close                           : Free channel pool.
 [LOG] SystemI::close                           : done.
 
+[LOG] System::create                           : Header version = 1.09.04. Current version = 1.09.04.
