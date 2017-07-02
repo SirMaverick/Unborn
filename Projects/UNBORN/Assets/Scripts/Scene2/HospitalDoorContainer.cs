@@ -13,10 +13,10 @@ public class HospitalDoorContainer : MonoBehaviour {
 
 	private void Update()
 	{
-		if(previousmoving == false && DoorMoving == true)
+		if(previousmoving == false && DoorMoving == true && DoorOpen == false)
 		{
 			//TO DO (-Milan)
-			//RuntimeManager.PlayOneShot("event:/Room 02/SFX/Door_open", transform.position + new Vector3(0, 0, 0.85f));
+			RuntimeManager.PlayOneShot("event:/Room 03/SFX/Door_open", transform.position);
 			
 		}
 		previousmoving = DoorMoving;

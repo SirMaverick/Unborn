@@ -149,6 +149,7 @@
     <Compile Include="Assets\ShaderForge\Example Assets\Scripts\SoftNormalsToVertexColor.cs" />
     <Compile Include="Assets\Shaders\CRTEffect.cs" />
     <Compile Include="Assets\Shaders\ScreenGlitchScript.cs" />
+    <Compile Include="Assets\babystartaudio.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Audio\GUIDs.txt" />
