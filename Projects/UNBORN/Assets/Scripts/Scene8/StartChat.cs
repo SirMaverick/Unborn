@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class StartChat : MonoBehaviour {
 
@@ -31,7 +32,7 @@ public class StartChat : MonoBehaviour {
                 go.SetActive(true);
             }
             done = true;
-            GameObject.Find("BGM").GetComponent<AudioSource>().Play();
+            GameObject.Find("BGM").GetComponent<StudioEventEmitter>().Play();
             Destroy(GetComponent<CharacterStorySettings>());
             Destroy(this);
         }

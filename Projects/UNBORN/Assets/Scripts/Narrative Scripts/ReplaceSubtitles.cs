@@ -247,6 +247,10 @@ public class ReplaceSubtitles : MonoBehaviour {
             StopMovement.MovementOff(60, -60);
         } else if (name == "StartDistortionEffect") {
             StartDistortion.StartDistortionEffect();
+			//foreach (GameObject bgm in GameObject.FindGameObjectsWithTag("BGM_Kerk"))
+			//{
+			//	bgm.GetComponent<StudioEventEmitter>().Play();
+			//}
         } else if (name == "StopDistortionEffect") {
             StartDistortion.StopDistortionEffect();
         } else if (name == "PreloadCrash") {

@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
   controlID: 21
 --- !u!114 &3
@@ -64,8 +64,8 @@ MonoBehaviour:
     y: 0
     width: 519
     height: 1307
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -333,10 +333,10 @@ MonoBehaviour:
   m_LastProjectPath: D:\Git\Unborn\unborn git\Projects\UNBORN
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 69}
+    scrollPos: {x: 0, y: 95}
     m_SelectedIDs: 32290000
     m_LastClickedID: 10546
-    m_ExpandedIDs: 0000000032290000082b0000b83100002e32000048320000d8330000063500006c390000703a0000c23a0000083b0000763c0000fa450000304600008648000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000032290000082b0000b83100002e32000048320000d83300000635000070390000743a0000c63a00000c3b00007a3c0000fe450000344600008a48000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +364,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000032290000082b000010300000b83100002e32000048320000d8330000063500006c390000703a0000c23a0000083b0000763c0000fa4500003046000086480000
+    m_ExpandedIDs: 0000000032290000082b0000b83100002e32000048320000d83300000635000070390000743a0000c63a00000c3b00007a3c0000fe450000344600008a480000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,9 +480,9 @@ MonoBehaviour:
     height: 741
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 542f0000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: f8b0f9ff2c26faff763dfaff6884faff66c9faffc8f8fafff4cefdff84edfdffb067feffde87feff667dffff1892ffffe2fbffff000000005e4a0000664d0000648a0000e444020030e303004ce70300a4ee040088f0040064f30400bafa0400
+    m_ExpandedIDs: c88effff6caeffff40f6ffffe2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -501,7 +501,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
-  - Room_2_Morning
+  - Churchh
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -532,14 +532,14 @@ MonoBehaviour:
     width: 1532
     height: 741
   m_SceneLighting: 1
-  lastFramingTime: 2385.4227301458177
+  lastFramingTime: 3774.8971860946504
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 6.1849346, y: 0.51932204, z: -1.6662035}
+    m_Target: {x: -16.631186, y: 5.377769, z: 3.027682}
     speed: 2
-    m_Value: {x: 6.1849346, y: 0.51932204, z: -1.6662035}
+    m_Value: {x: -16.631186, y: 5.377769, z: 3.027682}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -562,13 +562,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.0022627604, y: -0.9175477, z: -0.0052217883, w: -0.39758518}
+    m_Target: {x: -0.17824298, y: -0.70569354, z: 0.19098954, w: -0.6585964}
     speed: 2
-    m_Value: {x: 0.0022627604, y: -0.9175477, z: -0.0052217883, w: -0.39758518}
+    m_Value: {x: -0.17824297, y: -0.7056935, z: 0.19098951, w: -0.65859634}
   m_Size:
-    m_Target: 1.5670373
+    m_Target: 2.6287823
     speed: 2
-    m_Value: 1.5670373
+    m_Value: 2.6287823
   m_Ortho:
     m_Target: 0
     speed: 2
