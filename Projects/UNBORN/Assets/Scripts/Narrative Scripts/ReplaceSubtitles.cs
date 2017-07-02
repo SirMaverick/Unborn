@@ -200,7 +200,13 @@ public class ReplaceSubtitles : MonoBehaviour {
         snapshot.getDescription(out description);
         description.getLength(out wait);
         tempWait = wait;
-        Debug.Log(tempWait);
+
+		if (characterName != "Avaline")
+		{
+			RuntimeManager.AttachInstanceToGameObject(snapshot, GameObject.FindGameObjectWithTag(characterName).transform, GameObject.FindGameObjectWithTag(characterName).GetComponent<Rigidbody>());
+		}
+
+		Debug.Log(tempWait);
 
     }
 

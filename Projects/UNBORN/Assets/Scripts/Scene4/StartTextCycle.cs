@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FMODUnity;
 
 public class StartTextCycle : MonoBehaviour {
 
@@ -65,16 +66,20 @@ public class StartTextCycle : MonoBehaviour {
     }
 
     IEnumerator PushBicycle(Collider other) {
+			GetComponent<StudioEventEmitter>().Play();
+
         amountsOfPushing++;
         float step = speed * Time.deltaTime;
         Vector3 targetPos = new Vector3(transform.position.x, transform.position.y, transform.position.z + speed * 8);
         while (transform.position.z != targetPos.z) {
             transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
             yield return new WaitForSeconds(0.02f);
-        } if (amountsOfPushing == 5) {
+        }
+		if (amountsOfPushing == 5) {
             while(ReplaceSubtitles.instance.play == true) {
                 yield return new WaitForSeconds(0.02f);
-            } StartCoroutine(PushBicycle(other));
+            }
+			StartCoroutine(PushBicycle(other));
             yield return new WaitForSeconds(2.0f);
             ReplaceSubtitles.instance.currentStory = other.GetComponent<CharacterStorySettings>();
             ReplaceSubtitles.instance.start = true;
