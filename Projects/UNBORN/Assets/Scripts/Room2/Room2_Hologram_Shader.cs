@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class Room2_Hologram_Shader : MonoBehaviour {
 
@@ -13,6 +14,7 @@ public class Room2_Hologram_Shader : MonoBehaviour {
     public GameObject ControlPanel;
 
     public bool HologramOn;
+	bool playingaudio = false;
 
     // Use this for initialization
     void Start()
@@ -65,7 +67,18 @@ public class Room2_Hologram_Shader : MonoBehaviour {
             }
             GetComponent<Renderer>().material.SetFloat("_Offset", Offset);
         }
-    }
+		if(Mathf.Abs(Offset) > 0.1 && playingaudio == false)
+		{
+			GetComponent<StudioEventEmitter>().Play();
+			playingaudio = true;
+		}
+
+		if (Mathf.Abs(Offset) < 0.1 && playingaudio == true)
+		{
+			GetComponent<StudioEventEmitter>().Stop();
+			playingaudio = false;
+		}
+	}
 
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Player" && inHouse == false) {
