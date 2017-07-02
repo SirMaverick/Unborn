@@ -14,7 +14,7 @@
 [LOG] SystemI::init                            : create the stream thread
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000096296F28 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000000962997D8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -22,231 +22,74 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
-[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
-[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
-[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
-[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
-[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[WRN] PluginEffectModel::init                  : Missing DSP plugin 'Oculus Spatializer'
-[WRN] RuntimeBankModel::initPluginEffects      : Creating stub DSP plugin model and continuing.
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = Assets/Audio\Desktop/Master Bank.bank : mode 02012082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000000A12319A8 : node = 00000000A4B1D640
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001E327218.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000A12319A8
+[LOG] SystemI::createSoundInternal             :     filename = Assets/Audio\Desktop/Master Bank.bank : mode 02012082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 26566944
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 314656
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000A4B1D758
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     Format has 1 subsounds.
+[LOG] SystemI::createSoundInternal             :     Create as FMOD_CREATESTREAM
+[LOG] System::createSoundInternal              :     decode buffersize = 19200 : blocksize = 256 : format = 2
+[LOG] SystemI::createSample                    :     mode 02012082 length 19200 samples, lengthbytes 1417888
+[LOG] SystemI::createSample                    :     channels = 2
+[LOG] SystemI::createSample                    :     output = 00000000B3704068
+[LOG] OutputSoftware::createSample             :     lengthpcm 19200, lengthbytes 1417888, channels 2, format 2, freq 48000, mode 0201208a
+[LOG] System::createSoundInternal              :     1 subsounds detected.
+[LOG] System::createSoundInternal              :     Seek stream to start
+[LOG] System::createSoundInternal              :     switch file handle from small blocking single buffered to large nonblocking doublebuffered.
+[LOG] SystemI::createSoundInternal             :     done.  OpenState now = FMOD_OPENSTATE_READY.
+
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000A12319A8
+[LOG] SoundI::getSubSound                      : sound 00000000A12319A8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : starting non blocking seek and setting sound to not ready state
+[LOG] SoundI::getSubSound                      : finished preparing nonblocking getSubSound seek
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000544EB7C8
+[LOG] AsyncThread::threadFunc                  :     done setposition
+[LOG] AsyncThread::threadFunc                  :     done flush
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000544EB7C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000544EB7C8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000544EB7C8
+[LOG] SoundI::release                          : 1 (000000005473D1A8)
+[LOG] SoundI::release                          : remove stream samples. (000000005473D1A8)
+[LOG] SoundI::release                          :     1 (00000000A159F9B8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release subsounds. (000000005473D1A8)
+[LOG] SoundI::release                          :     1 (0000000095A42AC8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (000000005473D1A8)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          : thema v203 (00000000A12319A8)
+[LOG] SoundI::release                          : remove stream samples. (00000000A12319A8)
+[LOG] SoundI::release                          :     thema v203 (00000000B379EED8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release subsounds. (00000000A12319A8)
+[LOG] SoundI::release                          :     thema v203 (00000000544EB7C8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (00000000A12319A8)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (00000000007FFB08)
+[LOG] SoundI::release                          : release subsounds. (00000000007FFB08)
+[LOG] SoundI::release                          :     Zin02 (00000000B379F3B8)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (00000000007FFB08)
+[LOG] SoundI::release                          : done
+[LOG] SoundI::release                          :  (00000000008000C8)
+[LOG] SoundI::release                          : release subsounds. (00000000008000C8)
+[LOG] SoundI::release                          :     Zin01 (00000000B379F558)
+[LOG] SoundI::release                          :     done
+[LOG] SoundI::release                          : release codec. (00000000008000C8)
+[LOG] SoundI::release                          : done
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
@@ -262,4 +105,6 @@
 [LOG] SystemI::close                           : Free channel pool.
 [LOG] SystemI::close                           : done.
 
-[LOG] System::create                           : Header version = 1.09.04. Current version = 1.09.04.
+[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
+[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
+[LOG] Manager::readBank                        : fileversion = 88, compatVersion = 86 (oldest = 44, newest = 88)
