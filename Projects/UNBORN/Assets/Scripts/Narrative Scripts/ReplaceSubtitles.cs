@@ -20,6 +20,7 @@ public class ReplaceSubtitles : MonoBehaviour {
     public Text subtitles;
     public Text charName;
     public Text choice1, choice2, choice3;
+    public GameObject[] buttonList = new GameObject[3];
     private Text[] choiceLists = new Text[3];
     public RawImage fadeScreen;
 
@@ -103,8 +104,12 @@ public class ReplaceSubtitles : MonoBehaviour {
 
         } else if(currentNode.isChoice == false) {
             //charName.text = d.character;
+            if(d.character == "") {
+                subtitles.text = "";
+            } else {
+                subtitles.text = d.character + ": " + d.dialogueText;
+            }
             
-            subtitles.text = d.character + ": " + d.dialogueText;
 
             yield return new WaitForSeconds(waitTime);
 
@@ -126,7 +131,6 @@ public class ReplaceSubtitles : MonoBehaviour {
             foreach (DialogueSettings diaNode in currentStory.MyList) {
                 if(diaNode.nodeInput == lastDialogue) {
                     listOfChoices.Add(diaNode);
-                    Debug.Log("Added " + diaNode.nodeInput + " to list");
                 }
             } for (int c = 0; c < listOfChoices.Count; c++) {
                 choiceLists[c].text = listOfChoices[c].dialogueText;
@@ -191,6 +195,9 @@ public class ReplaceSubtitles : MonoBehaviour {
 
         }
         int currentScene = SceneManager.GetActiveScene().buildIndex + 1;
+        if (currentScene == 10) {
+            currentScene = 5;
+        }
         if(characterName == "Uncle David") {
             characterName = "Uncle";
         }
@@ -200,19 +207,18 @@ public class ReplaceSubtitles : MonoBehaviour {
         snapshot.getDescription(out description);
         description.getLength(out wait);
         tempWait = wait;
-
-		if (characterName != "Avaline")
-		{
-			RuntimeManager.AttachInstanceToGameObject(snapshot, GameObject.FindGameObjectWithTag(characterName).transform, GameObject.FindGameObjectWithTag(characterName).GetComponent<Rigidbody>());
-		}
-
-		Debug.Log(tempWait);
+        if(characterName != "Avaline" && characterName != "Computer") {
+            RuntimeManager.AttachInstanceToGameObject(snapshot, GameObject.FindGameObjectWithTag(characterName).transform, GameObject.FindGameObjectWithTag(characterName).GetComponent<Rigidbody>());
+        }
+        
+        Debug.Log(tempWait);
 
     }
 
     private void ShowChoices(List<DialogueSettings> listOfChoices) {
         choices.SetActive(true);
         for (int i = 0; i < listOfChoices.Count; i++) {
+            buttonList[i].SetActive(true);
             choiceLists[i].enabled = true;
         }
     }
@@ -220,6 +226,7 @@ public class ReplaceSubtitles : MonoBehaviour {
     private void HideChoices(List<DialogueSettings> listOfChoices) {
         choices.SetActive(false);
         for (int i = 0; i < listOfChoices.Count; i++) {
+            buttonList[i].SetActive(false);
             choiceLists[i].enabled = false;
         }
     }
@@ -253,10 +260,6 @@ public class ReplaceSubtitles : MonoBehaviour {
             StopMovement.MovementOff(60, -60);
         } else if (name == "StartDistortionEffect") {
             StartDistortion.StartDistortionEffect();
-			//foreach (GameObject bgm in GameObject.FindGameObjectsWithTag("BGM_Kerk"))
-			//{
-			//	bgm.GetComponent<StudioEventEmitter>().Play();
-			//}
         } else if (name == "StopDistortionEffect") {
             StartDistortion.StopDistortionEffect();
         } else if (name == "PreloadCrash") {

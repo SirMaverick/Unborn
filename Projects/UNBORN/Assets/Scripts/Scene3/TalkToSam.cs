@@ -13,6 +13,7 @@ public class TalkToSam : MonoBehaviour {
 
     bool quest;
     bool done;
+    bool spoken;
 
     public bool bearDone, elephantDone, giraffeDone, sharkDone;
 
@@ -34,16 +35,26 @@ public class TalkToSam : MonoBehaviour {
     void Update() {
         if (Physics.Raycast(camera.transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3f)) {
             if (hit.collider.GetComponent<TalkToSam>()) {
-                if (hit.transform.tag == "Sam" && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
+                if ((hit.transform.tag == "Drawing" || hit.transform.tag == "Interactable" || hit.transform.tag == "Door" || hit.transform.tag == "Sam") && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
                     if (interactText.enabled == false) {
-                        interactText.text = "Press X to talk to Sam";
-                        interactText.enabled = true;
+                        if (hit.transform.tag == "Sam") {
+                            if (spoken == false) {
+                                interactText.text = "Press X to say Hi";
+                                interactText.enabled = true;
+                            } else {
+                                interactText.text = "Press X to talk to Sam";
+                                interactText.enabled = true;
+                            }
+                            
+                        } else {
+                        }
                     }
 
                     if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0")) {
                         if (quest == false) {
 
                             if (done == false) {
+                                spoken = true;
                                 ReplaceSubtitles.instance.currentStory = hit.collider.GetComponent<CharacterStorySettings>();
                                 ReplaceSubtitles.instance.start = true;
                                 Destroy(hit.collider.GetComponent<CharacterStorySettings>());

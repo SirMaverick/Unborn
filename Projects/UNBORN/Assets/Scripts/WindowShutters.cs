@@ -74,7 +74,8 @@ public class WindowShutters : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if(other.tag == "Player" && inHouse == false) {
             inHouse = true;
-            StartCoroutine(ShutterOpen());
+            ControlPanel.GetComponent<Room2_ControlPanel>().Shutters = true;
+            ControlPanel.GetComponent<Room2_ControlPanel>().Holograms = true;
          }
     }
 }

@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 55dd59315c0367540beeeac9c9db7dc7
+timeCreated: 1498653191
+licenseType: Free
+ShaderImporter:
+  defaultTextures:
+  - _OffsetNoise: {fileID: 2800000, guid: 7a632f967e8ad42f5bd275898151ab6a, type: 3}
+  - _BlackWhiteBars: {fileID: 2800000, guid: 0acc6afed861dd544ad84cd32d8bb060, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

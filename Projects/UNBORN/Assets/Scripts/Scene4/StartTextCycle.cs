@@ -75,6 +75,7 @@ public class StartTextCycle : MonoBehaviour {
             transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
             yield return new WaitForSeconds(0.02f);
         }
+        GetComponent<StudioEventEmitter>().Stop();
 		if (amountsOfPushing == 5) {
             while(ReplaceSubtitles.instance.play == true) {
                 yield return new WaitForSeconds(0.02f);

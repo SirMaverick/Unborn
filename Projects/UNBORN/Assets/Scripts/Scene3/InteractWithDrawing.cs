@@ -26,29 +26,35 @@ public class InteractWithDrawing : MonoBehaviour {
 
     void Update () {
         if (Physics.Raycast(camera.transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3f)) {
-            if (hit.transform.tag == "Drawing" && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
-                Debug.Log(hit.transform.name);
-                Debug.Log(hit.transform.parent);
+            if ((hit.transform.tag == "Drawing" || hit.transform.tag == "Interactable" || hit.transform.tag == "Door" || hit.transform.tag == "Sam") && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
+                
                 if (interactText.enabled == false) {
-                    interactText.text = "Press X to look at drawing";
-                    interactText.enabled = true;
-                }
-
-                if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0")) {
-                    if (hit.transform.name == "Bear") {
-                        sam.bearDone = true;
-                    } else if (hit.transform.name == "Giraffe") {
-                        sam.giraffeDone = true;
-                    } else if (hit.transform.name == "Elephant") {
-                        sam.elephantDone = true;
-                    } else if (hit.transform.name == "Shark") {
-                        sam.sharkDone = true;
-
+                    if(hit.transform.tag == "Drawing") {
+                        interactText.text = "Press X to look at drawing";
+                        interactText.enabled = true;
+                    } else {
                     }
+                }
+                if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0")) {
+                    if (hit.transform.tag == "Drawing") {
 
+                    
+                        if (hit.transform.name == "Bear") {
+                            sam.bearDone = true;
+                        } else if (hit.transform.name == "Giraffe") {
+                            sam.giraffeDone = true;
+                        } else if (hit.transform.name == "Elephant") {
+                            sam.elephantDone = true;
+                        } else if (hit.transform.name == "Shark") {
+                            sam.sharkDone = true;
+
+                        }
+                    }
                     ReplaceSubtitles.instance.currentStory = hit.transform.GetComponent<CharacterStorySettings>();
                     ReplaceSubtitles.instance.start = true;
                 }
+
+                    
 
             } else {
                 if (interactText == true) {

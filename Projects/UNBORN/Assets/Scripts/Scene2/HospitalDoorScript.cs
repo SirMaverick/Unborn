@@ -15,6 +15,7 @@ public class HospitalDoorScript : MonoBehaviour {
     public GameObject hospitalRoom;
     RaycastHit hit;
     GameObject storyContainer;
+    public GameObject baby;
 
 
     // Use this for initialization
@@ -68,6 +69,9 @@ public class HospitalDoorScript : MonoBehaviour {
             ReplaceSubtitles.instance.start = true;
             chat3 = true;
             Destroy(storyContainer.GetComponent<CharacterStorySettings>());
+            baby.tag = "Interactable";
+            baby.transform.GetChild(0).gameObject.SetActive(true);
+            baby.transform.GetChild(1).gameObject.SetActive(true);
         }
     }
 

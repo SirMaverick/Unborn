@@ -16,7 +16,7 @@ public class babystartaudio : MonoBehaviour {
 		string currenttext = ReplaceSubtitles.instance.currentNode.fmodVoiceOver;
 		string currentchar = ReplaceSubtitles.instance.currentNode.character;
 
-		if(currentchar == "Avaline" && currenttext == "Zin02" && playing == false)
+		if(currentchar == "Avaline" && currenttext == "Zin03" && playing == false)
 		{
 			Debug.Log("Playing baby cry audio...");
 			GetComponent<StudioEventEmitter>().Play();

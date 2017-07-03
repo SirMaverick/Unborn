@@ -67,7 +67,7 @@ public class Room2_Hologram_Shader : MonoBehaviour {
             }
             GetComponent<Renderer>().material.SetFloat("_Offset", Offset);
         }
-		if(Mathf.Abs(Offset) > 0.1 && playingaudio == false)
+		if(Mathf.Abs(Offset) > 0.1 && playingaudio == false && HologramOn == true)
 		{
 			GetComponent<StudioEventEmitter>().Play();
 			playingaudio = true;

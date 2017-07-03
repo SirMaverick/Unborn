@@ -28,10 +28,13 @@ public class DoorScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Physics.Raycast(camera.transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3f)) {
-            if (hit.transform.tag == "Door" && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
-                if (interactText.enabled == false) {
-                    interactText.text = "Press X to open the door";
-                    interactText.enabled = true;
+            if ((hit.transform.tag == "Drawing" || hit.transform.tag == "Interactable" || hit.transform.tag == "Door" || hit.transform.tag == "Sam") && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
+                if (interactText.enabled == false)  {
+                    if(hit.transform.tag == "Door") {
+                        interactText.text = "Press X to open the door";
+                        interactText.enabled = true;
+                    }
+                   
                 }
 
                 if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0") && DoorMoving == false) {
@@ -45,6 +48,7 @@ public class DoorScript : MonoBehaviour {
                     }
                 }
 
+            } else if (hit.transform.tag == "Drawing" || hit.transform.tag == "Interactable") {
             } else {
                 HideInteractButton();
             }

@@ -104,11 +104,20 @@ public class PreloadLevel : MonoBehaviour {
         int currentLevel = 5;
         AsyncOperation async = SceneManager.LoadSceneAsync(currentLevel);
         async.allowSceneActivation = false;
+        GameObject faderObject = GameObject.FindGameObjectWithTag("Fader");
+        RawImage fader = faderObject.GetComponent<RawImage>();
+        Color color = fader.color;
         while (!async.isDone) {
             if (async.progress == 0.9f) {
                 yield return new WaitForSeconds(2);
                 async.allowSceneActivation = true;
             }
         }
+        for (float i = 1; i > 0; i = i - 0.02f) {
+            color.a = i;
+            fader.color = color;
+            yield return new WaitForSeconds(0.02f);
+        }
+
     }
 }

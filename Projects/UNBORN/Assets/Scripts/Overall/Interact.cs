@@ -21,7 +21,6 @@ public class Interact : MonoBehaviour {
         if (Physics.Raycast(player.transform.position, player.transform.TransformDirection(Vector3.forward), out hit, 3f)) {
             if (hit.collider.GetComponent<EnvironmentalAction>()) {
 
-
                 if (hit.transform.tag == "Interactable" && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
                     if (interactText.enabled == false) {
                         ShowInteractButton(hit.transform.gameObject);

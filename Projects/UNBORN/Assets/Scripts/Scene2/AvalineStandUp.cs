@@ -11,6 +11,8 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         GameObject player;
         bool isVisible;
         public GameObject avalineBody;
+        public GameObject babyWithout;
+        public GameObject babyWith;
 
         private void Start() {
             interactText = GameObject.Find("InteractText").GetComponent<Text>();
@@ -23,7 +25,7 @@ namespace UnityStandardAssets.Characters.FirstPerson {
                 isVisible = true;
             }
 
-            if (isVisible && (Input.GetKeyDown("joystick button 0") || Input.GetKeyDown(KeyCode.Z))) {
+            if (isVisible && ReplaceSubtitles.instance.play == false && (Input.GetKeyDown("joystick button 0") || Input.GetKeyDown(KeyCode.Z))) {
                 StartCoroutine(MoveAvalineOutBed());
                 interactText.enabled = false;
             }
@@ -35,6 +37,8 @@ namespace UnityStandardAssets.Characters.FirstPerson {
         }
 
         void StandUp() {
+            babyWithout.SetActive(false);
+            babyWith.SetActive(true);
             player.transform.position = transform.position;
             player.GetComponent<Rigidbody>().useGravity = true;
             player.GetComponent<CapsuleCollider>().enabled = true;
