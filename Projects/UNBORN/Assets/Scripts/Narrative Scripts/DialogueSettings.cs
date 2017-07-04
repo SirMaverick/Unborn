@@ -49,7 +49,9 @@ public class DialogueSettings {
         UncleDavid,
         Unknown,
         Empty,
-        Tracy
+        Tracy,
+        Peter,
+        NewsAnchor
     }
 
     public enum DialogueType {

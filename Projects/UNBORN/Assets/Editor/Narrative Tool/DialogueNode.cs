@@ -122,7 +122,12 @@ public class DialogueNode : BaseInputNode {
                     case DialogueSettings.CharacterType.Empty:
                         container.character = "";
                         break;
-
+                    case DialogueSettings.CharacterType.Peter:
+                        container.character = "Peter";
+                        break;
+                    case DialogueSettings.CharacterType.NewsAnchor:
+                        container.character = "News Anchor";
+                        break;
                 }
 
 
