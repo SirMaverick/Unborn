@@ -70,7 +70,8 @@ public class DialogueSettings {
         StartDistortionEffect,
         StopDistortionEffect,
         PreloadCrash,
-        PreloadFromCrash
+        PreloadFromCrash,
+        SwitchToCredits
     }
 
 

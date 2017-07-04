@@ -78,6 +78,8 @@ public class DialogueNode : BaseInputNode {
                 container.triggerFunction = "PreloadCrash";
             } else if (container.triggerType == DialogueSettings.TriggerType.PreloadFromCrash) {
                 container.triggerFunction = "PreloadFromCrash";
+            } else if (container.triggerType == DialogueSettings.TriggerType.SwitchToCredits) {
+                container.triggerFunction = "SwitchToCredits";
             }
             container.waitTime = EditorGUILayout.FloatField(container.waitTime);    
         } else if (container.isChoice == false) {

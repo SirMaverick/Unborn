@@ -266,6 +266,8 @@ public class ReplaceSubtitles : MonoBehaviour {
             StartCoroutine(PreloadLevel.PreloadCrashScene());
         } else if (name == "PreloadFromCrash") {
             StartCoroutine(PreloadLevel.PreloadFromCrashScene());
+        } else if (name == "SwitchToCredits") {
+            StartCoroutine(PreloadLevel.SwitchToCredits());
         }
     }
 }
