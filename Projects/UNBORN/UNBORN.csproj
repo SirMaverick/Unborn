@@ -135,6 +135,7 @@
     <Compile Include="Assets\Scripts\Scene6\Blink.cs" />
     <Compile Include="Assets\Scripts\Scene6\SetAlarmBlink.cs" />
     <Compile Include="Assets\Scripts\Scene6\StandUpAvaline.cs" />
+    <Compile Include="Assets\Scripts\Scene7\BoxOpened.cs" />
     <Compile Include="Assets\Scripts\Scene8\ShowBloodtracks.cs" />
     <Compile Include="Assets\Scripts\Scene8\StartChat.cs" />
     <Compile Include="Assets\Scripts\Scene8\StartDistortion.cs" />
