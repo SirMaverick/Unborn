@@ -36,7 +36,7 @@ public class StartUpFinalScene : MonoBehaviour {
                 d.startButton = true;
             }
         }
-        if(screen.Transparancy > 0.5f && done2 == false) {
+        if(screen.Transparancy > 0.5f && done2 == false && ReplaceSubtitles.instance.play == false) {
             done2 = true;
             for (int i = 0; i < storyList.Length; i++) {
                 if (storyList[i].dialogueName == secondStory) {
