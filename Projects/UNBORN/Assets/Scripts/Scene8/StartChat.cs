@@ -28,6 +28,7 @@ public class StartChat : MonoBehaviour {
         if (ReplaceSubtitles.instance.play == false && done == false) {
             sam.SetActive(false);
             ReplaceSubtitles.instance.currentStory = GetComponent<CharacterStorySettings>();
+            ReplaceSubtitles.instance.start = true;
             foreach (GameObject go in bloodtracks) {
                 go.SetActive(true);
             }

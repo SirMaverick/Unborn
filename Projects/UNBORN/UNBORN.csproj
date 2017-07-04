@@ -134,10 +134,12 @@
     <Compile Include="Assets\Scripts\Scene5\SwapScene.cs" />
     <Compile Include="Assets\Scripts\Scene6\Blink.cs" />
     <Compile Include="Assets\Scripts\Scene6\SetAlarmBlink.cs" />
+    <Compile Include="Assets\Scripts\Scene6\StandUpAvaline.cs" />
     <Compile Include="Assets\Scripts\Scene8\ShowBloodtracks.cs" />
     <Compile Include="Assets\Scripts\Scene8\StartChat.cs" />
     <Compile Include="Assets\Scripts\Scene8\StartDistortion.cs" />
     <Compile Include="Assets\Scripts\Scene8\TalkToTracy.cs" />
+    <Compile Include="Assets\Scripts\Scene8\WalkThroughDoor.cs" />
     <Compile Include="Assets\Scripts\Scene9\StartUpFinalScene.cs" />
     <Compile Include="Assets\Scripts\Screen_LightOn.cs" />
     <Compile Include="Assets\Scripts\SwapSceneCrash.cs" />
