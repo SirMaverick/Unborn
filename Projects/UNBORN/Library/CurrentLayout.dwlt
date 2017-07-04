@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 492}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 492}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_MinSize: {x: 917, y: 442}
   m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
-  controlID: 2961
+  controlID: 9
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 2962
+  controlID: 10
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,8 +154,8 @@ MonoBehaviour:
     y: 0
     width: 712
     height: 376
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -204,8 +204,8 @@ MonoBehaviour:
     y: 0
     width: 246
     height: 731
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 344
     height: 731
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -364,14 +364,14 @@ MonoBehaviour:
     width: 710
     height: 355
   m_SceneLighting: 1
-  lastFramingTime: 233.7436196539646
+  lastFramingTime: 93.18500486931792
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -18.461935, y: 1.9199166, z: 12.463408}
+    m_Target: {x: -0.57588065, y: 1.2471538, z: 0.00042951107}
     speed: 2
-    m_Value: {x: -18.461935, y: 1.9199166, z: 12.463408}
+    m_Value: {x: -0.57588065, y: 1.2471538, z: 0.00042951107}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -394,13 +394,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.2427702, y: -0.20135035, z: 0.051587753, w: 0.9475707}
+    m_Target: {x: 0.1101203, y: 0.3364595, z: -0.039649986, w: 0.9344117}
     speed: 2
-    m_Value: {x: -0.24277018, y: 0.20135033, z: -0.05158775, w: -0.9475707}
+    m_Value: {x: 0.11011871, y: 0.33645463, z: -0.039649412, w: 0.93439823}
   m_Size:
-    m_Target: 4.901344
+    m_Target: 2.4598362
     speed: 2
-    m_Value: 4.901344
+    m_Value: 2.4598362
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -439,9 +439,9 @@ MonoBehaviour:
     height: 710
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ea110300
-    m_LastClickedID: 201194
-    m_ExpandedIDs: 42f9fdff7a85feffbaa7feff38c0feff8ccbfeffa424ffffae24ffffd64effff806affff4082ffff0687ffff02baffffe0fbfffff4ffffff00000000bc02010020990100e0e301007004020054080200
+    m_SelectedIDs: 606c0000
+    m_LastClickedID: 0
+    m_ExpandedIDs: cc8cffff28a5ffffe0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -460,7 +460,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
   m_ExpandedScenes:
-  - HospitalRoom_Night
+  - Scene6
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -541,7 +541,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000048290000242b0000582e0000e22f0000203200009a320000b432000056340000723500007e35000088350000063a0000123b0000643b0000b03b00002e3d0000ca460000164700007249000000ca9a3bffffff7f
+    m_ExpandedIDs: 0000000048290000242b0000582e0000e22f0000203200009a320000b432000056340000723500007e35000088350000063a0000123b0000643b0000b03b00002e3d0000ca4600001647000072490000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -593,7 +593,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 2693}
+    m_ScrollPosition: {x: 0, y: 3293}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 110
 --- !u!114 &16
