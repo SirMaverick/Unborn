@@ -24,7 +24,7 @@ public class TalkToTracy : MonoBehaviour {
             if (hit.collider.GetComponent<TalkToTracy>()) {
                 if (hit.transform.tag == "Tracy" && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
                     if (interactText.enabled == false) {
-                        interactText.text = "Press X to talk to Tracy";
+                        interactText.text = "Press X to end the lie";
                         interactText.enabled = true;
                     }
 
