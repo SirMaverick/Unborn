@@ -31,7 +31,8 @@ public class Interact : MonoBehaviour {
                         ReplaceSubtitles.instance.start = true;
                     }
 
-                } else {
+                } else if (hit.transform.tag == "Pickup") {
+                } else { 
                     HideInteractButton();
                 }
             }

@@ -126,12 +126,15 @@
     <Compile Include="Assets\Scripts\Scene2\HospitalDoorContainer.cs" />
     <Compile Include="Assets\Scripts\Scene2\HospitalDoorScript.cs" />
     <Compile Include="Assets\Scripts\Scene2\ReplaceBaby.cs" />
+    <Compile Include="Assets\Scripts\Scene2\WatchDocument.cs" />
+    <Compile Include="Assets\Scripts\Scene3\DoorContainer.cs" />
     <Compile Include="Assets\Scripts\Scene3\EnterHouse.cs" />
     <Compile Include="Assets\Scripts\Scene3\InteractWithDrawing.cs" />
     <Compile Include="Assets\Scripts\Scene3\TalkToSam.cs" />
     <Compile Include="Assets\Scripts\Scene4\SamOffBike.cs" />
     <Compile Include="Assets\Scripts\Scene4\StartTextCycle.cs" />
     <Compile Include="Assets\Scripts\Scene5\EnterSamsRoom.cs" />
+    <Compile Include="Assets\Scripts\Scene5\PickUpDrawing.cs" />
     <Compile Include="Assets\Scripts\Scene5\SwapScene.cs" />
     <Compile Include="Assets\Scripts\Scene6\Blink.cs" />
     <Compile Include="Assets\Scripts\Scene6\SetAlarmBlink.cs" />

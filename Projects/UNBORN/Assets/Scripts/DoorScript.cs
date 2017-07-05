@@ -28,29 +28,31 @@ public class DoorScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (Physics.Raycast(camera.transform.position, camera.transform.TransformDirection(Vector3.forward), out hit, 3f)) {
-            if ((hit.transform.tag == "Drawing" || hit.transform.tag == "Interactable" || hit.transform.tag == "Door" || hit.transform.tag == "Sam") && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
+            if ( hit.transform.tag == "Door"  && hit.collider.GetComponentInChildren<Menu_Button_Pulse>().inRange == true) {
+                DoorContainer container = hit.transform.GetComponent<DoorContainer>();
                 if (interactText.enabled == false)  {
                     if(hit.transform.tag == "Door") {
                         interactText.text = "Press X to open the door";
                         interactText.enabled = true;
                     }
                    
-                }
+                } 
 
-                if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0") && DoorMoving == false) {
-                    if (DoorOpen == false) {
-                        StartCoroutine(OpenDoor());
+                if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown("joystick button 0") && container.DoorMoving == false) {
+                    if (container.DoorOpen == false) {
+                        StartCoroutine(OpenDoor(container));
                         RuntimeManager.PlayOneShot("event:/Room 02/SFX/Door_open", transform.position + new Vector3(0, 0, 0.85f));
 
                     } else {
-                        StartCoroutine(CloseDoor());
+                        StartCoroutine(CloseDoor(container));
                         RuntimeManager.PlayOneShot("event:/Room 02/SFX/Door_open", transform.position + new Vector3(0, 0, 0.85f));
                     }
                 }
 
-            } else if (hit.transform.tag == "Drawing" || hit.transform.tag == "Interactable") {
-            } else {
-                HideInteractButton();
+            } else if ((hit.transform.tag == "Drawing" || hit.transform.tag == "Interactable" || hit.transform.tag == "Sam")) {
+
+            } else { 
+            HideInteractButton();
             }
         } else {
             HideInteractButton();
@@ -63,23 +65,23 @@ public class DoorScript : MonoBehaviour {
 
     }
 
-    IEnumerator OpenDoor() {
-        DoorMoving = true;
-        GetComponent<Animation>().Play("DoorConsole");
+    IEnumerator OpenDoor(DoorContainer container) {
+        container.DoorMoving = true;
+        container.GetComponent<Animation>().Play("DoorConsole");
         yield return new WaitForSeconds(0.4f);
-        DoorPlate.GetComponent<Animation>().Play("DoorPlate");
+        container.DoorPlate.GetComponent<Animation>().Play("DoorPlate");
         yield return new WaitForSeconds(1.0f);
-        DoorOpen = true;
-        DoorMoving = false;
+        container.DoorOpen = true;
+        container.DoorMoving = false;
     }
 
-    IEnumerator CloseDoor() {
-        DoorMoving = true;
-        DoorPlate.GetComponent<Animation>().Play("DoorPlateclose");
+    IEnumerator CloseDoor(DoorContainer container) {
+        container.DoorMoving = true;
+        container.DoorPlate.GetComponent<Animation>().Play("DoorPlateclose");
         yield return new WaitForSeconds(0.7f);
-        GetComponent<Animation>().Play("DoorConsoleClose");
+        container.GetComponent<Animation>().Play("DoorConsoleClose");
         yield return new WaitForSeconds(1.0f);
-        DoorOpen = false;
-        DoorMoving = false;
+        container.DoorOpen = false;
+        container.DoorMoving = false;
     }
 }
